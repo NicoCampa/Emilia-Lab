@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { BrandMark } from "@/components/BrandMark";
 import { languages, navItems, type Language } from "@/content/site";
 import { useLanguage } from "@/components/LanguageProvider";
 import { cn } from "@/lib/utils";
@@ -26,10 +27,7 @@ export function Navbar() {
           href="/"
           onClick={closeMenu}
         >
-          <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg bg-leaf text-sm font-black text-white shadow-sm ring-1 ring-leaf/20 transition group-hover:scale-95">
-            <span className="absolute right-0 top-0 h-3 w-3 bg-lime" />
-            EL
-          </span>
+          <BrandMark className="transition group-hover:scale-[0.98]" />
           <span className="text-base font-black">Emilia Lab</span>
         </Link>
 

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/Button";
@@ -17,15 +16,19 @@ export function HomePage() {
   return (
     <>
       <section className="hero-poster relative isolate overflow-hidden">
-        <div className="hero-logo-plane hidden lg:block">
-          <Image
-            alt="Emilia Lab logo poster"
-            className="object-cover object-bottom"
-            fill
-            priority
-            sizes="46vw"
-            src="/emilia-logo.png"
-          />
+        <div className="hero-visual-plane hidden lg:block" aria-hidden="true">
+          <div className="signal-stack">
+            <span />
+            <span />
+            <span />
+          </div>
+          <div className="signal-core" />
+          <div className="signal-points">
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
         </div>
 
         <Container className="relative z-10 grid min-h-[calc(100svh-5rem)] items-center gap-10 py-10 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,0.58fr)]">
@@ -59,17 +62,13 @@ export function HomePage() {
             </div>
           </div>
 
-          <div className="relative -mx-5 overflow-hidden bg-leaf shadow-soft sm:mx-0 lg:hidden">
-            <div className="relative aspect-[4/3]">
-              <Image
-                alt="Emilia Lab logo"
-                className="object-cover object-bottom"
-                fill
-                priority
-                sizes="100vw"
-                src="/emilia-logo.png"
-              />
+          <div className="hero-mobile-signal relative -mx-5 overflow-hidden bg-leaf shadow-soft sm:mx-0 lg:hidden" aria-hidden="true">
+            <div className="signal-stack">
+              <span />
+              <span />
+              <span />
             </div>
+            <div className="signal-core" />
           </div>
         </Container>
       </section>
@@ -204,16 +203,6 @@ export function HomePage() {
       </Section>
 
       <Section className="relative overflow-hidden bg-leaf text-white">
-        <div className="absolute inset-y-0 right-0 hidden w-1/3 opacity-25 lg:block">
-          <Image
-            alt=""
-            aria-hidden="true"
-            className="object-cover object-bottom"
-            fill
-            sizes="33vw"
-            src="/emilia-logo.png"
-          />
-        </div>
         <SectionReveal>
           <div className="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
