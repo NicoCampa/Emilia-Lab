@@ -17,12 +17,23 @@ export function HomePage() {
     <>
       <section className="hero-poster relative isolate overflow-hidden">
         <div className="hero-visual-plane hidden lg:block" aria-hidden="true">
+          <div className="hero-visual-type">AI</div>
+          <div className="hero-visual-kicker">
+            <span>{home.hero.signal}</span>
+            <span>{home.hero.proof[2]}</span>
+          </div>
           <div className="signal-stack">
             <span />
             <span />
             <span />
           </div>
           <div className="signal-core" />
+          <div className="signal-bars">
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
           <div className="signal-points">
             <span />
             <span />
@@ -49,10 +60,10 @@ export function HomePage() {
                 {home.hero.secondaryCta}
               </Button>
             </div>
-            <div className="mt-10 flex max-w-2xl animate-fade-up flex-wrap gap-3 delay-500">
+            <div className="mt-10 flex max-w-2xl animate-fade-up flex-wrap items-center gap-x-6 gap-y-3 border-t border-ink/10 pt-6 delay-500">
               {home.hero.proof.map((item) => (
                 <div
-                  className="flex items-center gap-2 rounded-full border border-ink/10 bg-white/80 px-4 py-2 text-sm font-bold text-ink backdrop-blur"
+                  className="flex items-center gap-2 text-sm font-black text-ink"
                   key={item}
                 >
                   <Check className="h-4 w-4 text-leaf" />

@@ -68,7 +68,7 @@ export const siteContent = {
           "Rendiamo l'AI più concreta, accessibile e utile per il mercato italiano attraverso contenuti, prototipi, benchmark e sperimentazione.",
         primaryCta: "Unisciti al lab",
         secondaryCta: "Cosa facciamo",
-        signal: "Italian market focus",
+        signal: "Focus mercato italiano",
         proof: ["AI applicata", "Prototipi rapidi", "Benchmark indipendenti"]
       },
       intro: {
