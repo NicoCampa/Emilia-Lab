@@ -22,7 +22,7 @@ export function JoinPage() {
               <p className="text-sm font-bold uppercase text-moss">
                 {page.lookingForTitle}
               </p>
-              <div className="hairline-list mt-5 rounded-[1.5rem] border border-ink/10 bg-mist px-6">
+              <div className="hairline-list mt-5 rounded-lg border border-ink/10 bg-mist px-6">
                 {page.lookingFor.map((item) => (
                   <div className="flex gap-4 py-6" key={item}>
                     <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-lime text-ink">
@@ -36,7 +36,7 @@ export function JoinPage() {
           </SectionReveal>
 
           <SectionReveal>
-            <div className="rounded-[2rem] bg-ink p-8 text-white shadow-soft sm:p-10">
+            <div className="rounded-lg bg-ink p-8 text-white shadow-soft sm:p-10">
               <p className="text-sm font-bold uppercase text-lime">
                 {page.contactTitle}
               </p>

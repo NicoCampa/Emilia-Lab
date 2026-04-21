@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
@@ -17,26 +16,21 @@ export function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-ink/10 bg-mist/85 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-ink/10 bg-white/82 backdrop-blur-xl">
       <nav
         aria-label="Primary"
         className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8"
       >
         <Link
-          className="flex items-center gap-3 text-ink transition hover:text-moss"
+          className="group flex items-center gap-3 text-ink transition hover:text-moss"
           href="/"
           onClick={closeMenu}
         >
-          <span className="relative h-10 w-10 overflow-hidden rounded-xl bg-leaf shadow-sm">
-            <Image
-              alt="Emilia Lab logo"
-              className="object-cover object-bottom"
-              fill
-              sizes="40px"
-              src="/emilia-logo.png"
-            />
+          <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg bg-leaf text-sm font-black text-white shadow-sm ring-1 ring-leaf/20 transition group-hover:scale-95">
+            <span className="absolute right-0 top-0 h-3 w-3 bg-lime" />
+            EL
           </span>
-          <span className="text-base font-bold">Emilia Lab</span>
+          <span className="text-base font-black">Emilia Lab</span>
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">
@@ -46,8 +40,8 @@ export function Navbar() {
             return (
               <Link
                 className={cn(
-                  "rounded-full px-4 py-2 text-sm font-medium text-graphite transition hover:bg-white hover:text-ink",
-                  active && "bg-white text-ink shadow-sm"
+                  "rounded-full px-4 py-2 text-sm font-semibold text-graphite transition hover:bg-lime/35 hover:text-ink",
+                  active && "bg-lime/60 text-ink"
                 )}
                 href={item.href}
                 key={item.href}
@@ -61,7 +55,7 @@ export function Navbar() {
         <div className="hidden items-center gap-3 md:flex">
           <LanguageSwitcher language={language} setLanguage={setLanguage} />
           <Link
-            className="rounded-full bg-leaf px-4 py-2 text-sm font-semibold text-white transition hover:bg-moss"
+            className="rounded-full bg-leaf px-4 py-2 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-moss"
             href="/join"
           >
             {content.common.joinCta}
@@ -81,7 +75,7 @@ export function Navbar() {
 
       <div
         className={cn(
-          "grid border-t border-ink/10 bg-mist transition-all duration-300 md:hidden",
+          "grid border-t border-ink/10 bg-white transition-all duration-300 md:hidden",
           isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         )}
       >
@@ -90,7 +84,7 @@ export function Navbar() {
             {navItems.map((item) => (
               <Link
                 className={cn(
-                  "block rounded-2xl px-4 py-3 text-base font-medium text-graphite transition hover:bg-white hover:text-ink",
+                  "block rounded-lg px-4 py-3 text-base font-medium text-graphite transition hover:bg-lime/30 hover:text-ink",
                   pathname === item.href && "bg-white text-ink"
                 )}
                 href={item.href}

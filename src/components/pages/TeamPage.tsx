@@ -18,9 +18,9 @@ export function TeamPage() {
         <div className="grid gap-5 lg:grid-cols-2">
           {page.groups.map((group) => (
             <SectionReveal key={group.title}>
-              <article className="h-full rounded-[1.5rem] border border-ink/10 bg-mist p-6 transition hover:-translate-y-1 hover:border-leaf/30 hover:bg-white hover:shadow-soft">
+              <article className="h-full rounded-lg border border-ink/10 bg-mist p-6 transition hover:-translate-y-1 hover:border-leaf/30 hover:bg-white hover:shadow-soft">
                 <div className="flex items-start gap-4">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-lime text-ink">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-lime text-ink">
                     <UsersRound className="h-5 w-5" />
                   </span>
                   <div>
@@ -32,7 +32,7 @@ export function TeamPage() {
                 <div className="mt-7 space-y-3">
                   {group.members.map((member) => (
                     <div
-                      className="flex items-center justify-between gap-4 rounded-2xl bg-white px-4 py-4 ring-1 ring-ink/10"
+                      className="flex items-center justify-between gap-4 rounded-lg bg-white px-4 py-4 ring-1 ring-ink/10"
                       key={`${group.title}-${member.name}`}
                     >
                       <div>
@@ -50,7 +50,7 @@ export function TeamPage() {
         </div>
 
         <SectionReveal>
-          <p className="mt-10 max-w-3xl rounded-2xl border border-ink/10 bg-white p-5 leading-7 text-graphite">
+          <p className="mt-10 max-w-3xl rounded-lg border border-ink/10 bg-white p-5 leading-7 text-graphite">
             {page.note}
           </p>
         </SectionReveal>

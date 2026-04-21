@@ -13,7 +13,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr] lg:px-8">
         <div>
           <Link className="inline-flex items-center gap-3 text-ink" href="/">
-            <span className="relative h-11 w-11 overflow-hidden rounded-xl bg-leaf">
+            <span className="relative h-11 w-11 overflow-hidden rounded-lg bg-leaf">
               <Image
                 alt="Emilia Lab logo"
                 className="object-cover object-bottom"

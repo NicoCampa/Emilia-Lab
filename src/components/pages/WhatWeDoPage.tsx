@@ -19,7 +19,7 @@ export function WhatWeDoPage() {
         <div className="space-y-6">
           {page.sections.map((section, index) => (
             <SectionReveal key={section.title}>
-              <article className="grid gap-6 rounded-[1.5rem] border border-ink/10 bg-mist p-6 transition hover:border-leaf/30 hover:bg-white hover:shadow-soft md:grid-cols-[4rem_1fr_0.8fr] md:p-8">
+              <article className="grid gap-6 rounded-lg border border-ink/10 bg-mist p-6 transition hover:border-leaf/30 hover:bg-white hover:shadow-soft md:grid-cols-[4rem_1fr_0.8fr] md:p-8">
                 <div className="flex items-start justify-between md:block">
                   <IconBadge icon={section.icon as IconName} />
                   <span className="text-sm font-black text-ink/20 md:mt-8 md:block">
@@ -47,7 +47,7 @@ export function WhatWeDoPage() {
 
       <Section>
         <SectionReveal>
-          <div className="rounded-[2rem] bg-ink p-8 text-white sm:p-10 lg:p-12">
+          <div className="rounded-lg bg-ink p-8 text-white sm:p-10 lg:p-12">
             <p className="text-sm font-bold uppercase text-lime">Workflow</p>
             <h2 className="mt-4 text-4xl font-black sm:text-5xl">
               {page.rhythmTitle}

@@ -20,9 +20,9 @@ export function Button({
   const classes = cn(
     "group inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 text-sm font-semibold transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf",
     variant === "primary" &&
-      "bg-ink text-white shadow-soft hover:-translate-y-0.5 hover:bg-moss",
+      "bg-leaf text-white shadow-soft hover:-translate-y-0.5 hover:bg-moss",
     variant === "secondary" &&
-      "border border-ink/10 bg-white text-ink hover:-translate-y-0.5 hover:border-leaf/30 hover:text-moss",
+      "border border-ink/10 bg-white text-ink hover:-translate-y-0.5 hover:border-leaf/40 hover:bg-lime/25 hover:text-moss",
     variant === "ghost" &&
       "text-ink hover:bg-ink/[0.04] hover:text-moss",
     variant === "light" &&

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/Section";
 
 export function PageHeader({
@@ -8,15 +9,26 @@ export function PageHeader({
   intro: string;
 }) {
   return (
-    <section className="relative overflow-hidden border-b border-ink/10 bg-white py-20 sm:py-24">
-      <div className="absolute inset-0 bg-lab-grid bg-[size:28px_28px] opacity-50" />
-      <Container className="relative">
+    <section className="relative isolate overflow-hidden bg-ink py-20 text-white sm:py-24">
+      <div className="absolute inset-0 bg-lab-grid bg-[size:28px_28px] opacity-10" />
+      <div className="absolute inset-y-0 right-0 hidden w-[38vw] bg-leaf md:block">
+        <Image
+          alt=""
+          aria-hidden="true"
+          className="object-cover object-bottom opacity-55"
+          fill
+          sizes="38vw"
+          src="/emilia-logo.png"
+        />
+      </div>
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,#102018_0%,rgba(16,32,24,0.94)_56%,rgba(16,32,24,0.28)_100%)]" />
+      <Container className="relative z-10">
         <div className="max-w-3xl">
-          <p className="mb-4 text-sm font-bold uppercase text-moss">Emilia Lab</p>
-          <h1 className="text-5xl font-black leading-[1.02] text-ink sm:text-6xl">
+          <p className="mb-4 text-sm font-black uppercase text-lime">Emilia Lab</p>
+          <h1 className="text-5xl font-black leading-[1.02] text-white sm:text-6xl">
             {title}
           </h1>
-          <p className="mt-6 text-lg leading-8 text-graphite sm:text-xl">{intro}</p>
+          <p className="mt-6 text-lg leading-8 text-white/74 sm:text-xl">{intro}</p>
         </div>
       </Container>
     </section>

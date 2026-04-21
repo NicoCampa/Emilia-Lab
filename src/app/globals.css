@@ -37,6 +37,69 @@ body {
     #f5faf4;
 }
 
+.hero-poster {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(200, 255, 95, 0.32), transparent 28rem),
+    linear-gradient(90deg, #ffffff 0%, #ffffff 56%, #00bf63 56%, #00bf63 100%);
+}
+
+.hero-poster::before {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(16, 32, 24, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 32, 24, 0.055) 1px, transparent 1px);
+  background-size: 36px 36px;
+  content: "";
+  mask-image: linear-gradient(90deg, #000 0%, #000 52%, transparent 74%);
+  opacity: 0.9;
+}
+
+.hero-logo-plane {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: min(46vw, 720px);
+  overflow: hidden;
+  background: #00bf63;
+}
+
+.hero-logo-plane::before {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(90deg, rgba(0, 191, 99, 0.25), transparent 32%),
+    radial-gradient(circle at 50% 18%, rgba(200, 255, 95, 0.38), transparent 21rem);
+  content: "";
+}
+
+.hero-logo-plane::after {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(200, 255, 95, 0.2),
+    transparent
+  );
+  content: "";
+  transform: translateX(-100%);
+  animation: signal 4.2s ease-in-out infinite;
+}
+
+.lime-underline {
+  background: linear-gradient(transparent 62%, rgba(200, 255, 95, 0.74) 62%);
+}
+
+.focus-lane {
+  border-top: 1px solid rgba(16, 32, 24, 0.11);
+}
+
+.focus-lane:last-child {
+  border-bottom: 1px solid rgba(16, 32, 24, 0.11);
+}
+
 .signal-plane {
   position: relative;
   overflow: hidden;
@@ -82,5 +145,17 @@ body {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero-poster {
+    background:
+      radial-gradient(circle at 24% 18%, rgba(200, 255, 95, 0.34), transparent 20rem),
+      linear-gradient(180deg, #ffffff 0%, #ffffff 68%, #00bf63 68%, #00bf63 100%);
+  }
+
+  .hero-logo-plane {
+    display: none;
   }
 }
