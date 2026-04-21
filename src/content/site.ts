@@ -97,10 +97,10 @@ export const siteContent = {
         },
         {
           icon: "megaphone",
-          title: "Social & Growth",
+          title: "Social & Content",
           description:
-            "Trasformiamo ricerca e prototipi in contenuti accessibili, format social e community building.",
-          points: ["Content strategy", "Distribuzione", "Partnership"]
+            "Trasformiamo ricerca e prototipi in contenuti accessibili, storytelling e format visuali.",
+          points: ["Copy e storytelling", "Format visuali", "Output editoriali"]
         }
       ],
       why: {
@@ -129,8 +129,14 @@ export const siteContent = {
       teamPreview: {
         title: "Un team leggero, operativo e multidisciplinare",
         body:
-          "Leadership, engineering, ricerca, growth e creatività lavorano come un piccolo studio AI: pochi livelli, molta responsabilità e output concreti.",
-        roles: ["Leadership", "Prototyping", "Research", "Social & Growth", "Creative"]
+          "Leadership, engineering, contenuto, community e partnership lavorano come un piccolo studio AI: pochi livelli, molta responsabilità e output concreti.",
+        roles: [
+          "Leadership",
+          "Prototyping",
+          "Research & Benchmarking",
+          "Social & Content",
+          "Growth & Partnerships"
+        ]
       },
       finalCta: {
         title: "Vuoi costruire Emilia Lab con noi?",
@@ -212,32 +218,32 @@ export const siteContent = {
         {
           title: "Leadership",
           description:
-            "Direzione, priorità, standard editoriali e coordinamento delle aree.",
+            "Definisce visione e direzione di Emilia Lab, coordina i diversi team, stabilisce priorità e assicura coerenza tra tutte le attività. Rappresenta l'iniziativa verso l'esterno e prende le decisioni strategiche finali.",
           members: [{ name: "Nicolò Campagnoli", role: "Founder & Lead" }]
         },
         {
           title: "Engineering - Prototyping",
           description:
-            "Sviluppo di demo, automazioni, strumenti interni e prototipi AI.",
+            "Costruisce demo AI, prototipi, agenti e piccoli strumenti sperimentali. Trasforma le idee in proof of concept tangibili e supporta la parte tecnica dell'iniziativa con sviluppo rapido e iterazione continua.",
           members: [{ name: "Open role", role: "Prototype Builder" }]
         },
         {
           title: "Engineering - Research & Benchmarking",
           description:
-            "Ricerca applicata, test comparativi, report e framework di valutazione.",
+            "Valuta modelli, strumenti e workflow attraverso benchmark, test e confronti strutturati. Produce insight tecnici credibili, report e risultati utili a guidare esperimenti e contenuti.",
           members: [{ name: "Open role", role: "AI Research Analyst" }]
         },
         {
-          title: "Social & Growth",
+          title: "Social & Content",
           description:
-            "Distribuzione, community, partnership e crescita dei canali.",
-          members: [{ name: "Open role", role: "Growth & Community" }]
+            "Crea e gestisce l'output editoriale di Emilia Lab. Trasforma il lavoro tecnico in contenuti accessibili e coinvolgenti attraverso post, copy, storytelling e format visuali.",
+          members: [{ name: "Open role", role: "Content & Storytelling" }]
         },
         {
-          title: "Creative",
+          title: "Growth, Community & Ecosystem Partnerships",
           description:
-            "Identità visiva, format, editing, storytelling e contenuti.",
-          members: [{ name: "Open role", role: "Creative Editor" }]
+            "Sviluppa la crescita e la visibilità di Emilia Lab, costruisce una community coinvolta, sviluppa collaborazioni e partnership di ecosistema e aiuta a posizionare l'iniziativa come un nodo riconosciuto nel panorama AI.",
+          members: [{ name: "Open role", role: "Growth & Partnerships" }]
         }
       ],
       note:
@@ -323,10 +329,10 @@ export const siteContent = {
         },
         {
           icon: "megaphone",
-          title: "Social & Growth",
+          title: "Social & Content",
           description:
-            "We turn research and prototypes into accessible content, social formats, and community growth.",
-          points: ["Content strategy", "Distribution", "Partnerships"]
+            "We turn research and prototypes into accessible content, storytelling, and visual formats.",
+          points: ["Copy and storytelling", "Visual formats", "Editorial output"]
         }
       ],
       why: {
@@ -355,8 +361,14 @@ export const siteContent = {
       teamPreview: {
         title: "A lean, hands-on, multidisciplinary team",
         body:
-          "Leadership, engineering, research, growth, and creative work like a small AI studio: few layers, real ownership, concrete outputs.",
-        roles: ["Leadership", "Prototyping", "Research", "Social & Growth", "Creative"]
+          "Leadership, engineering, content, community, and partnerships work like a small AI studio: few layers, real ownership, concrete outputs.",
+        roles: [
+          "Leadership",
+          "Prototyping",
+          "Research & Benchmarking",
+          "Social & Content",
+          "Growth & Partnerships"
+        ]
       },
       finalCta: {
         title: "Want to build Emilia Lab with us?",
@@ -438,32 +450,32 @@ export const siteContent = {
         {
           title: "Leadership",
           description:
-            "Direction, priorities, editorial standards, and coordination across areas.",
+            "Define the vision and direction of Emilia Lab, coordinate the different teams, set priorities, and ensure consistency across all activities. Represent the initiative externally and make final strategic decisions.",
           members: [{ name: "Nicolò Campagnoli", role: "Founder & Lead" }]
         },
         {
           title: "Engineering - Prototyping",
           description:
-            "Development of demos, automations, internal tools, and AI prototypes.",
+            "Build AI demos, prototypes, agents, and small experimental tools. Turn ideas into tangible proof-of-concepts and support the technical side of the initiative through rapid development and iteration.",
           members: [{ name: "Open role", role: "Prototype Builder" }]
         },
         {
           title: "Engineering - Research & Benchmarking",
           description:
-            "Applied research, comparative tests, reports, and evaluation frameworks.",
+            "Evaluate models, tools, and workflows through benchmarks, testing, and structured comparisons. Produce credible technical insights, reports, and findings that can guide experiments and content.",
           members: [{ name: "Open role", role: "AI Research Analyst" }]
         },
         {
-          title: "Social & Growth",
+          title: "Social & Content",
           description:
-            "Distribution, community, partnerships, and channel growth.",
-          members: [{ name: "Open role", role: "Growth & Community" }]
+            "Create and manage the editorial output of Emilia Lab. Transform technical work into accessible, engaging content through posts, copy, storytelling, and visual content formats.",
+          members: [{ name: "Open role", role: "Content & Storytelling" }]
         },
         {
-          title: "Creative",
+          title: "Growth, Community & Ecosystem Partnerships",
           description:
-            "Visual identity, formats, editing, storytelling, and content.",
-          members: [{ name: "Open role", role: "Creative Editor" }]
+            "Drive the growth and visibility of Emilia Lab, foster an engaged community, develop collaborations and ecosystem partnerships, and help position the initiative as a recognized node in the AI landscape.",
+          members: [{ name: "Open role", role: "Growth & Partnerships" }]
         }
       ],
       note:
