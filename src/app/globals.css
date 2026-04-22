@@ -34,7 +34,6 @@ body {
   color: #c8ff5f;
   -webkit-text-stroke: clamp(0.45px, 0.025em, 2px) #00bf63;
   paint-order: stroke fill;
-  text-shadow: 0 0.02em 0 rgba(8, 123, 72, 0.35);
 }
 
 .hero-surface {
