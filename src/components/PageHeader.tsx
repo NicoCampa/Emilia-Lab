@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { EmiliaLab, HighlightEmilia } from "@/components/BrandText";
 import { Container } from "@/components/Section";
 
 export function PageHeader({
@@ -24,11 +25,15 @@ export function PageHeader({
       <div className="absolute inset-0 bg-[linear-gradient(90deg,#102018_0%,rgba(16,32,24,0.94)_56%,rgba(16,32,24,0.28)_100%)]" />
       <Container className="relative z-10">
         <div className="max-w-3xl">
-          <p className="mb-4 text-sm font-black uppercase text-lime">Emilia Lab</p>
+          <p className="mb-4 text-sm font-black uppercase text-white">
+            <EmiliaLab accentClassName="text-lime" />
+          </p>
           <h1 className="text-5xl font-black leading-[1.02] text-white sm:text-6xl">
-            {title}
+            <HighlightEmilia text={title} accentClassName="text-lime" />
           </h1>
-          <p className="mt-6 text-lg leading-8 text-white/74 sm:text-xl">{intro}</p>
+          <p className="mt-6 text-lg leading-8 text-white/74 sm:text-xl">
+            <HighlightEmilia text={intro} accentClassName="text-lime" />
+          </p>
         </div>
       </Container>
     </section>

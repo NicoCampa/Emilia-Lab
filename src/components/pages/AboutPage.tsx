@@ -1,5 +1,6 @@
 "use client";
 
+import { HighlightEmilia } from "@/components/BrandText";
 import { IconBadge } from "@/components/IconBadge";
 import { PageHeader } from "@/components/PageHeader";
 import { Section } from "@/components/Section";
@@ -18,7 +19,9 @@ export function AboutPage() {
       <Section className="bg-white">
         <SectionReveal>
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-            <p className="text-2xl font-black leading-10 text-ink">{page.body}</p>
+            <p className="text-2xl font-black leading-10 text-ink">
+              <HighlightEmilia text={page.body} />
+            </p>
             <div className="hairline-list rounded-lg border border-ink/10 bg-mist px-6">
               {page.manifesto.map((item) => (
                 <p className="py-6 text-lg font-semibold leading-8 text-ink" key={item}>

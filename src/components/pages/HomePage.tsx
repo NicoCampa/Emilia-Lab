@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/Button";
+import { EmiliaWord, HighlightEmilia } from "@/components/BrandText";
 import { IconBadge } from "@/components/IconBadge";
 import { Container, Section } from "@/components/Section";
 import { SectionReveal } from "@/components/SectionReveal";
@@ -40,7 +41,7 @@ export function HomePage() {
               {home.hero.eyebrow}
             </p>
             <h1 className="mt-5 animate-fade-up text-7xl font-black leading-[0.86] text-ink delay-100 sm:text-8xl lg:text-[8.4rem]">
-              Emilia
+              <EmiliaWord accentClassName="text-leaf" />
               <span className="block text-leaf">Lab</span>
             </h1>
             <p className="mt-8 max-w-2xl animate-fade-up text-lg leading-8 text-graphite delay-200 sm:text-xl">
@@ -90,7 +91,7 @@ export function HomePage() {
                 <span className="lime-underline">{home.intro.title}</span>
               </h2>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-graphite">
-                {home.intro.body}
+                <HighlightEmilia text={home.intro.body} />
               </p>
             </div>
           </div>
@@ -151,7 +152,7 @@ export function HomePage() {
             <div className="sticky top-28">
               <p className="text-sm font-bold uppercase text-lime">Why</p>
               <h2 className="mt-4 max-w-lg text-4xl font-black leading-[1.05] sm:text-5xl">
-                {home.why.title}
+                <HighlightEmilia text={home.why.title} accentClassName="text-lime" />
               </h2>
             </div>
             <div className="hairline-list">
@@ -215,7 +216,10 @@ export function HomePage() {
           <div className="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
               <h2 className="max-w-3xl text-4xl font-black leading-[1.05] sm:text-5xl">
-                {home.finalCta.title}
+                <HighlightEmilia
+                  text={home.finalCta.title}
+                  accentClassName="text-lime"
+                />
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-white/85">
                 {home.finalCta.body}

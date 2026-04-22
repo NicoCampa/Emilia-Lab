@@ -1,6 +1,7 @@
 "use client";
 
 import { UsersRound } from "lucide-react";
+import { HighlightEmilia } from "@/components/BrandText";
 import { PageHeader } from "@/components/PageHeader";
 import { Section } from "@/components/Section";
 import { SectionReveal } from "@/components/SectionReveal";
@@ -49,7 +50,7 @@ export function TeamPage() {
                 </div>
 
                 <p className="max-w-3xl text-base leading-8 text-graphite lg:text-lg">
-                  {group.description}
+                  <HighlightEmilia text={group.description} />
                 </p>
               </article>
             </SectionReveal>
