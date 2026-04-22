@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/Button";
@@ -16,29 +17,20 @@ export function HomePage() {
   return (
     <>
       <section className="hero-poster relative isolate overflow-hidden">
-        <div className="hero-visual-plane hidden lg:block" aria-hidden="true">
-          <div className="hero-visual-type">AI</div>
-          <div className="hero-visual-kicker">
+        <div className="hero-location-plane hidden lg:block">
+          <Image
+            alt="Bologna two towers"
+            className="object-cover object-center"
+            fill
+            priority
+            sizes="48vw"
+            src="/bologna-towers.jpg"
+          />
+          <div className="hero-location-wash" />
+          <div className="hero-location-grid" />
+          <div className="hero-location-label">
+            <span>{home.hero.location}</span>
             <span>{home.hero.signal}</span>
-            <span>{home.hero.proof[2]}</span>
-          </div>
-          <div className="signal-stack">
-            <span />
-            <span />
-            <span />
-          </div>
-          <div className="signal-core" />
-          <div className="signal-bars">
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
-          <div className="signal-points">
-            <span />
-            <span />
-            <span />
-            <span />
           </div>
         </div>
 
@@ -70,6 +62,19 @@ export function HomePage() {
                   <span>{item}</span>
                 </div>
               ))}
+            </div>
+            <div className="relative mt-8 h-36 overflow-hidden rounded-lg border border-ink/10 shadow-soft lg:hidden">
+              <Image
+                alt="Bologna two towers"
+                className="object-cover object-[50%_36%]"
+                fill
+                sizes="100vw"
+                src="/bologna-towers.jpg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-ink/45 via-ink/10 to-leaf/20" />
+              <div className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-black uppercase text-ink">
+                {home.hero.location}
+              </div>
             </div>
           </div>
 

@@ -69,6 +69,7 @@ export const siteContent = {
         primaryCta: "Unisciti al lab",
         secondaryCta: "Cosa facciamo",
         signal: "Focus mercato italiano",
+        location: "Bologna, città universitaria",
         proof: ["AI applicata", "Prototipi rapidi", "Benchmark indipendenti"]
       },
       intro: {
@@ -301,6 +302,7 @@ export const siteContent = {
         primaryCta: "Join the lab",
         secondaryCta: "What we do",
         signal: "Italian market focus",
+        location: "Bologna, university city",
         proof: ["Applied AI", "Rapid prototypes", "Independent benchmarks"]
       },
       intro: {

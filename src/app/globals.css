@@ -40,7 +40,7 @@ body {
 .hero-poster {
   background:
     radial-gradient(circle at 17% 18%, rgba(200, 255, 95, 0.28), transparent 26rem),
-    linear-gradient(90deg, #ffffff 0%, #ffffff 55.5%, #00bf63 55.5%, #00bf63 100%);
+    #ffffff;
 }
 
 .hero-poster::before {
@@ -55,34 +55,43 @@ body {
   opacity: 0.9;
 }
 
-.hero-visual-plane {
+.hero-location-plane {
   position: absolute;
   inset: 0 0 0 auto;
   width: min(47.5vw, 780px);
   overflow: hidden;
-  background:
-    radial-gradient(circle at 68% 22%, rgba(200, 255, 95, 0.42), transparent 15rem),
-    linear-gradient(150deg, #3eb84d 0%, #00ad5f 47%, #067544 100%);
+  background: #102018;
 }
 
-.hero-visual-plane::before {
+.hero-location-wash {
   position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(0, 191, 99, 0.4), rgba(16, 32, 24, 0.04) 44%),
+    linear-gradient(180deg, rgba(16, 32, 24, 0), rgba(16, 32, 24, 0.34)),
+    rgba(0, 191, 99, 0.06);
+}
+
+.hero-location-grid {
+  position: absolute;
+  z-index: 2;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.16) 1px, transparent 1px);
   background-size: 42px 42px;
-  content: "";
-  opacity: 0.64;
+  opacity: 0.2;
 }
 
-.hero-visual-plane::after {
+.hero-location-plane::after {
   position: absolute;
   inset: 0;
+  z-index: 3;
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(200, 255, 95, 0.22),
+    rgba(200, 255, 95, 0.14),
     transparent
   );
   content: "";
@@ -90,134 +99,24 @@ body {
   animation: signal 4.2s ease-in-out infinite;
 }
 
-.hero-visual-type {
+.hero-location-label {
   position: absolute;
-  right: -0.06em;
-  top: 7%;
-  z-index: 1;
-  color: rgba(255, 255, 255, 0.12);
-  font-size: clamp(8rem, 21vw, 20rem);
-  font-weight: 900;
-  letter-spacing: 0;
-  line-height: 0.8;
-}
-
-.hero-visual-kicker {
-  position: absolute;
-  left: 11%;
-  top: 18%;
-  z-index: 2;
+  bottom: 8%;
+  left: 10%;
+  z-index: 4;
   display: flex;
-  gap: 18px;
-  color: rgba(255, 255, 255, 0.78);
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 72%;
+  color: #102018;
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.hero-visual-kicker span {
-  border-left: 4px solid #c8ff5f;
-  padding-left: 10px;
-}
-
-.signal-stack {
-  position: absolute;
-  top: 43%;
-  left: 10%;
-  z-index: 2;
-  display: grid;
-  width: min(20rem, 52%);
-  gap: 12px;
-}
-
-.signal-stack span {
-  height: 10px;
-  background: rgba(255, 255, 255, 0.88);
-}
-
-.signal-stack span:nth-child(2) {
-  width: 76%;
-  background: rgba(200, 255, 95, 0.92);
-}
-
-.signal-stack span:nth-child(3) {
-  width: 54%;
-}
-
-.signal-core {
-  position: absolute;
-  right: 13%;
-  top: 30%;
-  z-index: 2;
-  width: clamp(9rem, 16vw, 13.5rem);
-  aspect-ratio: 1;
-  border: 1px solid rgba(255, 255, 255, 0.42);
-  background:
-    linear-gradient(90deg, transparent 49%, rgba(200, 255, 95, 0.7) 49% 51%, transparent 51%),
-    linear-gradient(transparent 49%, rgba(200, 255, 95, 0.7) 49% 51%, transparent 51%),
-    rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.045);
-}
-
-.signal-bars {
-  position: absolute;
-  bottom: 13%;
-  left: 11%;
-  z-index: 2;
-  display: grid;
-  width: min(32rem, 72%);
-  gap: 11px;
-}
-
-.signal-bars span {
-  height: 9px;
-  background: rgba(255, 255, 255, 0.78);
-}
-
-.signal-bars span:nth-child(1) {
-  width: 88%;
-}
-
-.signal-bars span:nth-child(2) {
-  width: 62%;
-  background: #c8ff5f;
-}
-
-.signal-bars span:nth-child(3) {
-  width: 72%;
-}
-
-.signal-bars span:nth-child(4) {
-  width: 44%;
-  background: rgba(255, 255, 255, 0.56);
-}
-
-.signal-points span {
-  position: absolute;
-  z-index: 2;
-  width: 10px;
-  height: 10px;
-  background: #c8ff5f;
-}
-
-.signal-points span:nth-child(1) {
-  right: 22%;
-  top: 18%;
-}
-
-.signal-points span:nth-child(2) {
-  right: 43%;
-  top: 48%;
-}
-
-.signal-points span:nth-child(3) {
-  right: 13%;
-  bottom: 26%;
-}
-
-.signal-points span:nth-child(4) {
-  right: 32%;
-  bottom: 16%;
+.hero-location-label span {
+  background: rgba(200, 255, 95, 0.9);
+  padding: 8px 10px;
 }
 
 .lime-underline {
@@ -287,7 +186,7 @@ body {
       #ffffff;
   }
 
-  .hero-visual-plane {
+  .hero-location-plane {
     display: none;
   }
 
