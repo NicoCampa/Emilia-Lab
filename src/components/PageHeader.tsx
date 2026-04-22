@@ -26,13 +26,13 @@ export function PageHeader({
       <Container className="relative z-10">
         <div className="max-w-3xl">
           <p className="mb-4 text-sm font-black uppercase text-white">
-            <EmiliaLab accentClassName="text-lime" />
+            <EmiliaLab tone="mark" />
           </p>
           <h1 className="text-5xl font-black leading-[1.02] text-white sm:text-6xl">
-            <HighlightEmilia text={title} accentClassName="text-lime" />
+            <HighlightEmilia text={title} tone="mark" />
           </h1>
           <p className="mt-6 text-lg leading-8 text-white/74 sm:text-xl">
-            <HighlightEmilia text={intro} accentClassName="text-lime" />
+            <HighlightEmilia text={intro} tone="mark" />
           </p>
         </div>
       </Container>

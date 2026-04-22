@@ -42,7 +42,7 @@ export function JoinPage() {
                 {page.contactTitle}
               </p>
               <h2 className="mt-5 text-4xl font-black leading-[1.05]">
-                <EmiliaLab accentClassName="text-lime" />
+                <EmiliaLab tone="mark" />
               </h2>
               <p className="mt-5 leading-8 text-white/72">{page.contactBody}</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -59,7 +59,7 @@ export function JoinPage() {
                   external
                 >
                   <Radio className="h-4 w-4" />
-                  <HighlightEmilia text={page.secondary} accentClassName="text-lime" />
+                  <HighlightEmilia text={page.secondary} tone="mark" />
                 </Button>
               </div>
             </div>

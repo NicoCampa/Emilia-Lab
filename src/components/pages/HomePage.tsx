@@ -36,7 +36,7 @@ export function HomePage() {
               {home.hero.eyebrow}
             </p>
             <h1 className="mt-5 animate-fade-up text-7xl font-black leading-[0.86] text-ink delay-100 sm:text-8xl lg:text-[8.4rem]">
-              <EmiliaWord accentClassName="text-leaf" />
+              <EmiliaWord />
               <span className="block text-leaf">Lab</span>
             </h1>
             <p className="mt-8 max-w-2xl animate-fade-up text-lg leading-8 text-graphite delay-200 sm:text-xl">
@@ -147,7 +147,7 @@ export function HomePage() {
             <div className="sticky top-28">
               <p className="text-sm font-bold uppercase text-lime">Why</p>
               <h2 className="mt-4 max-w-lg text-4xl font-black leading-[1.05] sm:text-5xl">
-                <HighlightEmilia text={home.why.title} accentClassName="text-lime" />
+                <HighlightEmilia text={home.why.title} tone="mark" />
               </h2>
             </div>
             <div className="hairline-list">
@@ -213,7 +213,7 @@ export function HomePage() {
               <h2 className="max-w-3xl text-4xl font-black leading-[1.05] sm:text-5xl">
                 <HighlightEmilia
                   text={home.finalCta.title}
-                  accentClassName="text-lime"
+                  tone="mark"
                 />
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-white/85">
