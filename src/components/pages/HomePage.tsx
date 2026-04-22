@@ -17,7 +17,7 @@ export function HomePage() {
 
   return (
     <>
-      <section className="hero-poster relative isolate overflow-hidden">
+      <section className="hero-poster relative isolate overflow-hidden pt-16">
         <div className="hero-location-plane hidden lg:block">
           <Image
             alt="Line illustration of Bologna's two towers"
