@@ -20,19 +20,14 @@ export function HomePage() {
       <section className="hero-poster relative isolate overflow-hidden">
         <div className="hero-location-plane hidden lg:block">
           <Image
-            alt="Bologna two towers"
-            className="object-cover object-center"
+            alt="Line illustration of Bologna's two towers"
+            className="object-cover object-[50%_52%]"
             fill
             priority
             sizes="48vw"
-            src="/bologna-towers.jpg"
+            src="/bologna-line-art.png"
           />
           <div className="hero-location-wash" />
-          <div className="hero-location-grid" />
-          <div className="hero-location-label">
-            <span>{home.hero.location}</span>
-            <span>{home.hero.signal}</span>
-          </div>
         </div>
 
         <Container className="relative z-10 grid min-h-[calc(100svh-4rem)] items-center gap-8 py-8 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,0.58fr)]">
@@ -66,14 +61,14 @@ export function HomePage() {
             </div>
             <div className="relative mt-8 h-36 overflow-hidden rounded-lg border border-ink/10 shadow-soft lg:hidden">
               <Image
-                alt="Bologna two towers"
-                className="object-cover object-[50%_36%]"
+                alt="Line illustration of Bologna's two towers"
+                className="object-cover object-[50%_52%]"
                 fill
                 sizes="100vw"
-                src="/bologna-towers.jpg"
+                src="/bologna-line-art.png"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-ink/45 via-ink/10 to-leaf/20" />
-              <div className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-black uppercase text-ink">
+              <div className="absolute inset-0 bg-gradient-to-r from-leaf/10 via-transparent to-ink/5" />
+              <div className="absolute bottom-3 left-3 rounded-full bg-white/92 px-3 py-1 text-xs font-black uppercase text-ink shadow-sm">
                 {home.hero.location}
               </div>
             </div>
