@@ -39,8 +39,8 @@ body {
 
 .hero-poster {
   background:
-    radial-gradient(circle at 18% 22%, rgba(200, 255, 95, 0.32), transparent 28rem),
-    linear-gradient(90deg, #ffffff 0%, #ffffff 56%, #00bf63 56%, #00bf63 100%);
+    radial-gradient(circle at 17% 18%, rgba(200, 255, 95, 0.28), transparent 26rem),
+    linear-gradient(90deg, #ffffff 0%, #ffffff 55.5%, #00bf63 55.5%, #00bf63 100%);
 }
 
 .hero-poster::before {
@@ -58,15 +58,14 @@ body {
 .hero-visual-plane {
   position: absolute;
   inset: 0 0 0 auto;
-  width: min(47vw, 760px);
+  width: min(47.5vw, 780px);
   overflow: hidden;
   background:
-    radial-gradient(circle at 60% 24%, rgba(200, 255, 95, 0.42), transparent 16rem),
-    linear-gradient(145deg, #35b84b 0%, #00a95d 48%, #087b48 100%);
+    radial-gradient(circle at 68% 22%, rgba(200, 255, 95, 0.42), transparent 15rem),
+    linear-gradient(150deg, #3eb84d 0%, #00ad5f 47%, #067544 100%);
 }
 
-.hero-visual-plane::before,
-.hero-mobile-signal::before {
+.hero-visual-plane::before {
   position: absolute;
   inset: 0;
   background-image:
@@ -77,8 +76,7 @@ body {
   opacity: 0.64;
 }
 
-.hero-visual-plane::after,
-.hero-mobile-signal::after {
+.hero-visual-plane::after {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -92,20 +90,13 @@ body {
   animation: signal 4.2s ease-in-out infinite;
 }
 
-.hero-mobile-signal {
-  min-height: 220px;
-  background:
-    radial-gradient(circle at 64% 28%, rgba(200, 255, 95, 0.42), transparent 12rem),
-    linear-gradient(145deg, #00bf63, #087b48);
-}
-
 .hero-visual-type {
   position: absolute;
-  right: -0.04em;
-  top: 8%;
+  right: -0.06em;
+  top: 7%;
   z-index: 1;
-  color: rgba(255, 255, 255, 0.13);
-  font-size: clamp(9rem, 22vw, 21rem);
+  color: rgba(255, 255, 255, 0.12);
+  font-size: clamp(8rem, 21vw, 20rem);
   font-weight: 900;
   letter-spacing: 0;
   line-height: 0.8;
@@ -131,16 +122,16 @@ body {
 
 .signal-stack {
   position: absolute;
-  top: 42%;
+  top: 43%;
   left: 10%;
   z-index: 2;
   display: grid;
-  width: min(22rem, 56%);
-  gap: 14px;
+  width: min(20rem, 52%);
+  gap: 12px;
 }
 
 .signal-stack span {
-  height: 12px;
+  height: 10px;
   background: rgba(255, 255, 255, 0.88);
 }
 
@@ -155,10 +146,10 @@ body {
 
 .signal-core {
   position: absolute;
-  right: 14%;
-  top: 28%;
+  right: 13%;
+  top: 30%;
   z-index: 2;
-  width: clamp(10rem, 18vw, 15rem);
+  width: clamp(9rem, 16vw, 13.5rem);
   aspect-ratio: 1;
   border: 1px solid rgba(255, 255, 255, 0.42);
   background:
@@ -170,16 +161,16 @@ body {
 
 .signal-bars {
   position: absolute;
-  bottom: 12%;
+  bottom: 13%;
   left: 11%;
   z-index: 2;
   display: grid;
-  width: min(34rem, 76%);
-  gap: 13px;
+  width: min(32rem, 72%);
+  gap: 11px;
 }
 
 .signal-bars span {
-  height: 10px;
+  height: 9px;
   background: rgba(255, 255, 255, 0.78);
 }
 
@@ -292,11 +283,12 @@ body {
 @media (max-width: 1023px) {
   .hero-poster {
     background:
-      radial-gradient(circle at 24% 18%, rgba(200, 255, 95, 0.34), transparent 20rem),
-      linear-gradient(180deg, #ffffff 0%, #ffffff 68%, #00bf63 68%, #00bf63 100%);
+      radial-gradient(circle at 24% 18%, rgba(200, 255, 95, 0.32), transparent 20rem),
+      #ffffff;
   }
 
   .hero-visual-plane {
     display: none;
   }
+
 }

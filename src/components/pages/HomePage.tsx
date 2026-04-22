@@ -42,12 +42,12 @@ export function HomePage() {
           </div>
         </div>
 
-        <Container className="relative z-10 grid min-h-[calc(100svh-5rem)] items-center gap-10 py-10 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,0.58fr)]">
-          <div className="max-w-3xl py-8 lg:py-14">
+        <Container className="relative z-10 grid min-h-[calc(100svh-4rem)] items-center gap-8 py-8 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,0.58fr)]">
+          <div className="max-w-3xl py-7 lg:py-12">
             <p className="animate-fade-up text-sm font-black uppercase text-moss">
               {home.hero.eyebrow}
             </p>
-            <h1 className="mt-5 animate-fade-up text-7xl font-black leading-[0.86] text-ink delay-100 sm:text-8xl lg:text-[9rem]">
+            <h1 className="mt-5 animate-fade-up text-7xl font-black leading-[0.86] text-ink delay-100 sm:text-8xl lg:text-[8.4rem]">
               Emilia
               <span className="block text-leaf">Lab</span>
             </h1>
@@ -60,7 +60,7 @@ export function HomePage() {
                 {home.hero.secondaryCta}
               </Button>
             </div>
-            <div className="mt-10 flex max-w-2xl animate-fade-up flex-wrap items-center gap-x-6 gap-y-3 border-t border-ink/10 pt-6 delay-500">
+            <div className="mt-9 flex max-w-2xl animate-fade-up flex-wrap items-center gap-x-6 gap-y-3 border-t border-ink/10 pt-5 delay-500">
               {home.hero.proof.map((item) => (
                 <div
                   className="flex items-center gap-2 text-sm font-black text-ink"
@@ -73,14 +73,6 @@ export function HomePage() {
             </div>
           </div>
 
-          <div className="hero-mobile-signal relative -mx-5 overflow-hidden bg-leaf shadow-soft sm:mx-0 lg:hidden" aria-hidden="true">
-            <div className="signal-stack">
-              <span />
-              <span />
-              <span />
-            </div>
-            <div className="signal-core" />
-          </div>
         </Container>
       </section>
 
