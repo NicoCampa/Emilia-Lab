@@ -17,28 +17,28 @@ export function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/45 bg-white/24 shadow-[0_1px_24px_rgba(16,32,24,0.04)] backdrop-blur-2xl supports-[backdrop-filter]:bg-white/18">
+    <header className="pointer-events-none fixed inset-x-0 top-0 z-50">
       <nav
         aria-label="Primary"
         className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8"
       >
         <Link
-          className="group flex items-center text-ink transition hover:text-moss"
+          className="group pointer-events-auto flex items-center text-ink transition hover:text-moss"
           href="/"
           onClick={closeMenu}
         >
           <BrandMark className="transition group-hover:scale-[0.98]" />
         </Link>
 
-        <div className="hidden items-center gap-1 rounded-full border border-white/70 bg-white/55 p-1 shadow-sm backdrop-blur-md md:flex">
+        <div className="hidden items-center gap-2 md:flex">
           {navItems.map((item) => {
             const active = pathname === item.href;
 
             return (
               <Link
                 className={cn(
-                  "rounded-full px-4 py-2 text-sm font-semibold text-graphite transition hover:bg-lime/30 hover:text-ink",
-                  active && "bg-lime/50 text-ink"
+                  "pointer-events-auto rounded-full border border-white/70 bg-white/55 px-4 py-2 text-sm font-semibold text-graphite shadow-sm backdrop-blur-md transition hover:bg-lime/40 hover:text-ink",
+                  active && "border-lime/70 bg-lime/70 text-ink"
                 )}
                 href={item.href}
                 key={item.href}
@@ -52,7 +52,7 @@ export function Navbar() {
         <div className="hidden items-center gap-3 md:flex">
           <LanguageSwitcher language={language} setLanguage={setLanguage} />
           <Link
-            className="rounded-full bg-leaf px-5 py-2 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-moss"
+            className="pointer-events-auto rounded-full bg-leaf px-5 py-2 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-moss"
             href="/join"
           >
             {content.common.joinCta}
@@ -62,7 +62,7 @@ export function Navbar() {
         <button
           aria-expanded={isOpen}
           aria-label={isOpen ? "Close menu" : "Open menu"}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/70 bg-white/55 text-ink shadow-sm backdrop-blur-md md:hidden"
+          className="pointer-events-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/70 bg-white/55 text-ink shadow-sm backdrop-blur-md md:hidden"
           onClick={() => setIsOpen((value) => !value)}
           type="button"
         >
@@ -72,8 +72,10 @@ export function Navbar() {
 
       <div
         className={cn(
-          "grid border-t border-white/50 bg-white/88 backdrop-blur-xl transition-all duration-300 md:hidden",
-          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+          "pointer-events-auto mx-5 grid rounded-lg border backdrop-blur-xl transition-all duration-300 md:hidden",
+          isOpen
+            ? "grid-rows-[1fr] border-white/70 bg-white/92 shadow-soft"
+            : "grid-rows-[0fr] border-transparent bg-transparent shadow-none"
         )}
       >
         <div className="overflow-hidden">
@@ -82,7 +84,7 @@ export function Navbar() {
               <Link
                 className={cn(
                   "block rounded-lg px-4 py-3 text-base font-medium text-graphite transition hover:bg-lime/30 hover:text-ink",
-                  pathname === item.href && "bg-white text-ink"
+                  pathname === item.href && "bg-lime/50 text-ink"
                 )}
                 href={item.href}
                 key={item.href}
@@ -118,7 +120,7 @@ function LanguageSwitcher({
   return (
     <div
       aria-label="Language switcher"
-      className="inline-flex rounded-full border border-white/70 bg-white/55 p-1 shadow-sm backdrop-blur-md"
+      className="pointer-events-auto inline-flex rounded-full border border-white/70 bg-white/55 p-1 shadow-sm backdrop-blur-md"
       role="group"
     >
       {(Object.keys(languages) as Language[]).map((item) => (
