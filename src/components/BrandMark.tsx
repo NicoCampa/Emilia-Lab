@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 export function BrandMark({ className }: { className?: string }) {
@@ -5,14 +6,18 @@ export function BrandMark({ className }: { className?: string }) {
     <span
       aria-label="Emilia Lab"
       className={cn(
-        "relative inline-flex h-9 items-end overflow-hidden rounded-[3px] bg-leaf px-3 pb-2 pt-1 text-white shadow-sm ring-1 ring-leaf/20",
+        "relative inline-flex h-9 w-[4.9rem] overflow-hidden rounded-[3px] bg-leaf shadow-sm ring-1 ring-leaf/20",
         className
       )}
     >
-      <span className="absolute inset-x-0 top-0 h-0.5 bg-lime" />
-      <span className="text-[14px] font-black leading-none">
-        EMIL<span className="text-lime">IA</span>
-      </span>
+      <Image
+        alt=""
+        aria-hidden="true"
+        className="object-cover object-[50%_55%]"
+        fill
+        sizes="96px"
+        src="/emilia-logo.png"
+      />
     </span>
   );
 }
