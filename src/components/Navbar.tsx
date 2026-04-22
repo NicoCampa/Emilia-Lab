@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { BrandMark } from "@/components/BrandMark";
 import { languages, navItems, type Language } from "@/content/site";
 import { useLanguage } from "@/components/LanguageProvider";
 import { cn } from "@/lib/utils";
@@ -20,17 +19,9 @@ export function Navbar() {
     <header className="pointer-events-none fixed inset-x-0 top-0 z-50">
       <nav
         aria-label="Primary"
-        className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8"
+        className="mx-auto grid h-16 max-w-7xl grid-cols-[1fr_auto] items-center px-5 sm:px-6 md:grid-cols-[1fr_auto_1fr] lg:px-8"
       >
-        <Link
-          className="group pointer-events-auto flex items-center text-ink transition hover:text-moss"
-          href="/"
-          onClick={closeMenu}
-        >
-          <BrandMark className="transition group-hover:scale-[0.98]" />
-        </Link>
-
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-2 md:col-start-2 md:flex">
           {navItems.map((item) => {
             const active = pathname === item.href;
 
@@ -49,7 +40,7 @@ export function Navbar() {
           })}
         </div>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center justify-self-end gap-3 md:flex">
           <LanguageSwitcher language={language} setLanguage={setLanguage} />
           <Link
             className="pointer-events-auto rounded-full bg-leaf px-5 py-2 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-moss"
@@ -62,7 +53,7 @@ export function Navbar() {
         <button
           aria-expanded={isOpen}
           aria-label={isOpen ? "Close menu" : "Open menu"}
-          className="pointer-events-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/70 bg-white/55 text-ink shadow-sm backdrop-blur-md md:hidden"
+          className="pointer-events-auto col-start-2 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/70 bg-white/55 text-ink shadow-sm backdrop-blur-md md:hidden"
           onClick={() => setIsOpen((value) => !value)}
           type="button"
         >
