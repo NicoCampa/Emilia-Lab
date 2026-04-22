@@ -30,6 +30,13 @@ body {
   color: #102018;
 }
 
+.brand-ai-on-light {
+  color: #c8ff5f;
+  -webkit-text-stroke: clamp(0.45px, 0.025em, 2px) #00bf63;
+  paint-order: stroke fill;
+  text-shadow: 0 0.02em 0 rgba(8, 123, 72, 0.35);
+}
+
 .hero-surface {
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(245, 250, 244, 0.72)),

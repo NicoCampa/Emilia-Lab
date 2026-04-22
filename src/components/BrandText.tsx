@@ -14,7 +14,7 @@ function getBrandClasses(tone: BrandTone) {
 
   return {
     main: "text-leaf",
-    accent: "text-lime",
+    accent: "brand-ai-on-light",
     lab: "text-leaf"
   };
 }
