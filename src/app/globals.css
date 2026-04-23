@@ -32,9 +32,18 @@ body {
 }
 
 .brand-ai-on-light {
+  position: relative;
+  display: inline-block;
+  color: #00bf63;
+}
+
+.brand-ai-on-light::after {
+  position: absolute;
+  inset: 0;
   color: #c8ff5f;
-  -webkit-text-stroke: clamp(0.45px, 0.025em, 2px) #00bf63;
-  paint-order: stroke fill;
+  content: attr(data-text);
+  transform: scale(0.9);
+  transform-origin: center;
 }
 
 .hero-surface {
