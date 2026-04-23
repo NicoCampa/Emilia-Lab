@@ -80,7 +80,7 @@ export const siteContent = {
       },
       focusTitle: "Le aree di lavoro",
       focusSubtitle:
-        "Tre anime complementari: costruire, misurare e far arrivare le idee alle persone giuste.",
+        "Quattro anime complementari: costruire, misurare, raccontare e far crescere una community attiva.",
       focusAreas: [
         {
           icon: "rocket",
@@ -102,6 +102,13 @@ export const siteContent = {
           description:
             "Trasformiamo ricerca e prototipi in contenuti accessibili, storytelling e format visuali.",
           points: ["Copy e storytelling", "Format visuali", "Output editoriali"]
+        },
+        {
+          icon: "users",
+          title: "Growth, Community & Events",
+          description:
+            "Facciamo crescere la community, costruiamo partnership e organizziamo momenti di incontro con studenti, builder e realtà dell'ecosistema AI.",
+          points: ["Community building", "Partnership", "Eventi e meetup"]
         }
       ],
       why: {
@@ -205,6 +212,13 @@ export const siteContent = {
           description:
             "Creiamo format editoriali, contenuti social e opportunità di collaborazione con altri studenti e builder.",
           details: ["Short-form content", "Guide pratiche", "Eventi e collaborazioni"]
+        },
+        {
+          icon: "users",
+          title: "Growth, partnership ed eventi",
+          description:
+            "Sviluppiamo la rete intorno a Emilia Lab attraverso community, partnership con realtà dell'ecosistema e momenti dal vivo o online.",
+          details: ["Community", "Partnership di ecosistema", "Eventi e meetup"]
         }
       ],
       rhythmTitle: "Ritmo operativo",
@@ -313,7 +327,7 @@ export const siteContent = {
       },
       focusTitle: "Focus areas",
       focusSubtitle:
-        "Three connected tracks: build, measure, and bring ideas to the right people.",
+        "Four connected tracks: build, measure, communicate, and grow an active community.",
       focusAreas: [
         {
           icon: "rocket",
@@ -335,6 +349,13 @@ export const siteContent = {
           description:
             "We turn research and prototypes into accessible content, storytelling, and visual formats.",
           points: ["Copy and storytelling", "Visual formats", "Editorial output"]
+        },
+        {
+          icon: "users",
+          title: "Growth, Community & Events",
+          description:
+            "We grow the community, build partnerships, and create moments for students, builders, and AI ecosystem players to meet.",
+          points: ["Community building", "Partnerships", "Events and meetups"]
         }
       ],
       why: {
@@ -438,6 +459,13 @@ export const siteContent = {
           description:
             "We create editorial formats, social content, and collaboration opportunities with other students and builders.",
           details: ["Short-form content", "Practical guides", "Events and collaborations"]
+        },
+        {
+          icon: "users",
+          title: "Growth, partnerships, and events",
+          description:
+            "We develop the network around Emilia Lab through community, ecosystem partnerships, and live or online moments.",
+          details: ["Community", "Ecosystem partnerships", "Events and meetups"]
         }
       ],
       rhythmTitle: "Operating rhythm",
