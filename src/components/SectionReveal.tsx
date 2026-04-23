@@ -38,8 +38,8 @@ export function SectionReveal({
     <div
       ref={ref}
       className={cn(
-        "translate-y-6 opacity-0 transition duration-700 ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100",
-        visible && "translate-y-0 opacity-100",
+        "translate-y-3 opacity-100 transition duration-700 ease-out motion-reduce:translate-y-0",
+        visible && "translate-y-0",
         className
       )}
     >
