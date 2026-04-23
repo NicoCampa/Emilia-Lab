@@ -21,7 +21,6 @@ export const languages: Record<Language, string> = {
 export const navItems = [
   { href: "/", key: "home" },
   { href: "/about", key: "about" },
-  { href: "/what-we-do", key: "whatWeDo" },
   { href: "/team", key: "team" },
   { href: "/join", key: "join" }
 ] as const;
