@@ -43,7 +43,7 @@ export function Navbar() {
         <div className="hidden items-center justify-self-end gap-3 md:flex">
           <LanguageSwitcher language={language} setLanguage={setLanguage} />
           <Link
-            className="pointer-events-auto rounded-full bg-leaf px-5 py-2 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-moss"
+            className="pointer-events-auto rounded-full bg-lime px-5 py-2 text-sm font-bold text-ink shadow-sm transition hover:-translate-y-0.5 hover:bg-lime/80"
             href="/join"
           >
             {content.common.joinCta}
@@ -87,7 +87,7 @@ export function Navbar() {
             <div className="flex items-center justify-between pt-3">
               <LanguageSwitcher language={language} setLanguage={setLanguage} />
               <Link
-                className="rounded-full bg-leaf px-4 py-2 text-sm font-semibold text-white"
+                className="rounded-full bg-lime px-4 py-2 text-sm font-semibold text-ink"
                 href="/join"
                 onClick={closeMenu}
               >
