@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { HighlightEmilia } from "@/components/BrandText";
 import { Container } from "@/components/Section";
 
@@ -12,16 +11,7 @@ export function PageHeader({
   return (
     <section className="relative isolate overflow-hidden bg-ink py-20 text-white sm:py-24">
       <div className="absolute inset-0 bg-lab-grid bg-[size:28px_28px] opacity-10" />
-      <div className="absolute inset-y-0 right-0 hidden w-[38vw] bg-leaf md:block">
-        <Image
-          alt=""
-          aria-hidden="true"
-          className="object-cover object-bottom opacity-55"
-          fill
-          sizes="38vw"
-          src="/emilia-logo.png"
-        />
-      </div>
+      <div className="absolute inset-y-0 right-0 hidden w-[38vw] bg-leaf md:block" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,#102018_0%,rgba(16,32,24,0.94)_56%,rgba(16,32,24,0.28)_100%)]" />
       <Container className="relative z-10">
         <div className="max-w-3xl">
