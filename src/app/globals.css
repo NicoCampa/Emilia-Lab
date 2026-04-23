@@ -32,18 +32,17 @@ body {
 }
 
 .brand-ai-on-light {
-  position: relative;
-  display: inline-block;
-  color: #00bf63;
-}
-
-.brand-ai-on-light::after {
-  position: absolute;
-  inset: 0;
   color: #c8ff5f;
-  content: attr(data-text);
-  transform: scale(0.9);
-  transform-origin: center;
+  --brand-ai-outline: clamp(1px, 0.024em, 3.5px);
+  text-shadow:
+    var(--brand-ai-outline) 0 0 #00bf63,
+    calc(var(--brand-ai-outline) * -1) 0 0 #00bf63,
+    0 var(--brand-ai-outline) 0 #00bf63,
+    0 calc(var(--brand-ai-outline) * -1) 0 #00bf63,
+    var(--brand-ai-outline) var(--brand-ai-outline) 0 #00bf63,
+    calc(var(--brand-ai-outline) * -1) var(--brand-ai-outline) 0 #00bf63,
+    var(--brand-ai-outline) calc(var(--brand-ai-outline) * -1) 0 #00bf63,
+    calc(var(--brand-ai-outline) * -1) calc(var(--brand-ai-outline) * -1) 0 #00bf63;
 }
 
 .hero-surface {

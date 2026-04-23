@@ -35,9 +35,7 @@ export function EmiliaWord({
   return (
     <span className={cn(classes.main, className)}>
       {stem}
-      <span className={classes.accent} data-text={ai}>
-        {ai}
-      </span>
+      <span className={classes.accent}>{ai}</span>
     </span>
   );
 }
