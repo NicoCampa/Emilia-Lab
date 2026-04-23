@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import { Button } from "@/components/Button";
 import { EmiliaWord, HighlightEmilia } from "@/components/BrandText";
 import { IconBadge } from "@/components/IconBadge";
@@ -168,39 +167,6 @@ export function HomePage() {
                   </div>
                 );
               })}
-            </div>
-          </div>
-        </SectionReveal>
-      </Section>
-
-      <Section className="bg-white">
-        <SectionReveal>
-          <div className="grid gap-10 lg:grid-cols-[1fr_1.15fr] lg:items-center">
-            <div>
-              <h2 className="text-4xl font-black leading-[1.05] text-ink sm:text-5xl">
-                {home.teamPreview.title}
-              </h2>
-              <p className="mt-5 max-w-xl text-lg leading-8 text-graphite">
-                {home.teamPreview.body}
-              </p>
-              <Link
-                className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-moss transition hover:text-ink"
-                href="/team"
-              >
-                {content.nav.team}
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
-            <div className="rounded-lg border border-ink/10 bg-mist p-3">
-              {home.teamPreview.roles.map((role) => (
-                <div
-                  className="flex items-center justify-between border-b border-ink/10 px-4 py-5 text-lg font-black text-ink last:border-b-0"
-                  key={role}
-                >
-                  <span>{role}</span>
-                  <span className="h-3 w-3 rounded-full bg-leaf" />
-                </div>
-              ))}
             </div>
           </div>
         </SectionReveal>
