@@ -25,7 +25,7 @@ export function HomePage() {
             fill
             priority
             sizes="48vw"
-            src="/bologna-line-art.png"
+            src="/image.png"
           />
           <div className="hero-location-wash" />
         </div>
@@ -65,7 +65,7 @@ export function HomePage() {
                 className="object-cover object-[50%_52%]"
                 fill
                 sizes="100vw"
-                src="/bologna-line-art.png"
+                src="/image.png"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-leaf/10 via-transparent to-ink/5" />
               <div className="absolute bottom-3 left-3 rounded-full bg-white/92 px-3 py-1 text-xs font-black uppercase text-ink shadow-sm">
