@@ -34,7 +34,7 @@ export function HomePage() {
             <p className="animate-fade-up text-sm font-black uppercase text-moss">
               {home.hero.eyebrow}
             </p>
-            <h1 className="mt-5 animate-fade-up text-7xl font-black leading-[0.86] text-ink delay-100 sm:text-8xl lg:text-[8.4rem]">
+            <h1 className="font-space mt-5 animate-fade-up text-7xl font-black leading-[0.86] text-ink delay-100 sm:text-8xl lg:text-[8.4rem]">
               <EmiliaWord />
               <span className="block text-leaf">Lab</span>
             </h1>
@@ -81,7 +81,7 @@ export function HomePage() {
           <div className="mx-auto max-w-4xl text-center">
             <p className="text-sm font-black uppercase text-moss">{home.intro.label}</p>
             <div className="mt-8">
-              <h2 className="max-w-4xl text-4xl font-black leading-[1.05] text-ink sm:text-5xl">
+              <h2 className="font-space text-4xl font-black leading-[1.05] text-ink sm:text-5xl">
                 <span className="lime-underline">{home.intro.title}</span>
               </h2>
               <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-graphite">
@@ -95,7 +95,7 @@ export function HomePage() {
       <Section id="focus">
         <SectionReveal>
           <div className="grid gap-6 lg:grid-cols-[0.78fr_1fr] lg:items-end">
-            <h2 className="text-4xl font-black text-ink sm:text-5xl">
+            <h2 className="font-space text-4xl font-black text-ink sm:text-5xl">
               {home.focusTitle}
             </h2>
             <p className="max-w-2xl text-lg leading-8 text-graphite">
@@ -107,7 +107,7 @@ export function HomePage() {
         <div className="mt-12">
           {home.focusAreas.map((area, index) => (
             <SectionReveal key={area.title}>
-              <article className="focus-lane group grid gap-6 py-8 transition duration-300 hover:bg-white/70 sm:grid-cols-[4rem_1fr] lg:grid-cols-[5rem_0.9fr_1fr] lg:items-start lg:px-4">
+              <article className="bento-card group grid gap-6 p-8 lg:grid-cols-[5rem_0.9fr_1fr] lg:items-start">
                 <div className="flex items-center justify-between sm:block">
                   <span className="text-sm font-black text-leaf">
                     0{index + 1}
@@ -116,7 +116,7 @@ export function HomePage() {
                     <IconBadge icon={area.icon as IconName} />
                   </div>
                 </div>
-                <h3 className="text-3xl font-black leading-tight text-ink transition group-hover:text-moss">
+                <h3 className="font-space text-3xl font-black leading-tight text-ink transition group-hover:text-moss">
                   {area.title}
                 </h3>
                 <div>
@@ -145,7 +145,7 @@ export function HomePage() {
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div className="sticky top-28">
               <p className="text-sm font-bold uppercase text-lime">Why</p>
-              <h2 className="mt-4 max-w-lg text-4xl font-black leading-[1.05] sm:text-5xl">
+              <h2 className="font-space mt-4 max-w-lg text-4xl font-black leading-[1.05] sm:text-5xl">
                 <HighlightEmilia text={home.why.title} tone="mark" />
               </h2>
             </div>
@@ -159,7 +159,7 @@ export function HomePage() {
                       <Icon className="h-5 w-5" />
                     </span>
                     <div>
-                      <h3 className="text-2xl font-black">{item.title}</h3>
+                      <h3 className="font-space text-2xl font-black">{item.title}</h3>
                       <p className="mt-3 max-w-2xl leading-7 text-white/70">
                         {item.description}
                       </p>
@@ -176,11 +176,8 @@ export function HomePage() {
         <SectionReveal>
           <div className="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
-              <h2 className="max-w-3xl text-4xl font-black leading-[1.05] sm:text-5xl">
-                <HighlightEmilia
-                  text={home.finalCta.title}
-                  tone="mark"
-                />
+              <h2 className="font-space max-w-3xl text-4xl font-black leading-[1.05] sm:text-5xl">
+                <HighlightEmilia text={home.finalCta.title} tone="mark" />
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-white/85">
                 {home.finalCta.body}

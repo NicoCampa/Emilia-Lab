@@ -25,10 +25,13 @@ const config: Config = {
           "BlinkMacSystemFont",
           "Segoe UI",
           "sans-serif"
-        ]
+        ],
+        space: ["var(--font-space)", "sans-serif"]
       },
       boxShadow: {
-        soft: "0 24px 80px rgba(16, 32, 24, 0.08)"
+        soft: "0 24px 80px rgba(16, 32, 24, 0.08)",
+        bento: "0 4px 24px -6px rgba(16, 32, 24, 0.08), 0 0 0 1px rgba(16, 32, 24, 0.04)",
+        "bento-hover": "0 12px 32px -8px rgba(0, 191, 99, 0.15), 0 0 0 1px rgba(0, 191, 99, 0.2)"
       },
       backgroundImage: {
         "lab-grid":
@@ -46,12 +49,17 @@ const config: Config = {
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" }
+        },
+        glow: {
+          "0%, 100%": { opacity: "0.4", transform: "scale(1)" },
+          "50%": { opacity: "0.7", transform: "scale(1.05)" }
         }
       },
       animation: {
         "fade-up": "fadeUp 700ms ease-out both",
         signal: "signal 3.6s ease-in-out infinite",
-        float: "float 7s ease-in-out infinite"
+        float: "float 7s ease-in-out infinite",
+        glow: "glow 4s ease-in-out infinite"
       }
     }
   },

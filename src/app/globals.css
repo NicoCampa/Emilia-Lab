@@ -112,6 +112,21 @@ body {
   border-bottom: 1px solid rgba(16, 32, 24, 0.11);
 }
 
+.bento-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(16, 32, 24, 0.06);
+  border-radius: 1.25rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(0, 191, 99, 0.2);
+  transform: translateY(-4px);
+}
+
 .signal-plane {
   position: relative;
   overflow: hidden;
