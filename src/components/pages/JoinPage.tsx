@@ -1,7 +1,7 @@
 "use client";
 
 import { Mail, Plus, Radio } from "lucide-react";
-import { EmiliaLab, HighlightEmilia } from "@/components/BrandText";
+import { HighlightEmilia } from "@/components/BrandText";
 import { Button } from "@/components/Button";
 import { PageHeader } from "@/components/PageHeader";
 import { Section } from "@/components/Section";
@@ -42,7 +42,7 @@ export function JoinPage() {
                 {page.contactTitle}
               </p>
               <h2 className="mt-5 text-4xl font-black leading-[1.05]">
-                <EmiliaLab tone="mark" />
+                Emilia Lab
               </h2>
               <p className="mt-5 leading-8 text-white/72">{page.contactBody}</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">

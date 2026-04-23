@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { cn } from "@/lib/utils";
 
 type BrandTone = "brand" | "mark";
+type HighlightMode = "plain" | "brand";
 
 function getBrandClasses(tone: BrandTone) {
   if (tone === "mark") {
@@ -61,16 +62,22 @@ export function EmiliaLab({
 
 export function HighlightEmilia({
   text,
-  tone = "brand"
+  tone = "brand",
+  mode = "plain"
 }: {
   text: string;
   tone?: BrandTone;
+  mode?: HighlightMode;
 }) {
   const parts = text.split(/(Emilia Lab|EMILIA LAB|Emilia|EMILIA)/g);
 
   return (
     <>
       {parts.map((part, index) => {
+        if (mode === "plain") {
+          return <Fragment key={`${part}-${index}`}>{part}</Fragment>;
+        }
+
         if (part === "Emilia Lab") {
           return (
             <EmiliaLab key={`${part}-${index}`} tone={tone} />

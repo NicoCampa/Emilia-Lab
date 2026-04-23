@@ -1,8 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { BrandMark } from "@/components/BrandMark";
-import { EmiliaLab } from "@/components/BrandText";
 import { navItems } from "@/content/site";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -14,10 +12,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr] lg:px-8">
         <div>
           <Link className="inline-flex items-center gap-3 text-ink" href="/">
-            <BrandMark className="h-11" />
-            <span className="text-lg font-bold">
-              <EmiliaLab />
-            </span>
+            <span className="text-lg font-bold">Emilia Lab</span>
           </Link>
           <p className="mt-5 max-w-md text-sm leading-6 text-graphite">
             {content.footer.tagline}

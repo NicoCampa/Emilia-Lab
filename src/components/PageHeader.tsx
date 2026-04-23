@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { EmiliaLab, HighlightEmilia } from "@/components/BrandText";
+import { HighlightEmilia } from "@/components/BrandText";
 import { Container } from "@/components/Section";
 
 export function PageHeader({
@@ -26,7 +26,7 @@ export function PageHeader({
       <Container className="relative z-10">
         <div className="max-w-3xl">
           <p className="mb-4 text-sm font-black uppercase text-white">
-            <EmiliaLab tone="mark" />
+            Emilia Lab
           </p>
           <h1 className="text-5xl font-black leading-[1.02] text-white sm:text-6xl">
             <HighlightEmilia text={title} tone="mark" />

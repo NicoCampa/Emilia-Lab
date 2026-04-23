@@ -78,13 +78,13 @@ export function HomePage() {
 
       <Section className="bg-white">
         <SectionReveal>
-          <div className="grid gap-8 md:grid-cols-[0.7fr_1.3fr] md:items-end">
+          <div className="mx-auto max-w-4xl text-center">
             <p className="text-sm font-black uppercase text-moss">{home.intro.label}</p>
-            <div>
+            <div className="mt-8">
               <h2 className="max-w-4xl text-4xl font-black leading-[1.05] text-ink sm:text-5xl">
                 <span className="lime-underline">{home.intro.title}</span>
               </h2>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-graphite">
+              <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-graphite">
                 <HighlightEmilia text={home.intro.body} />
               </p>
             </div>
