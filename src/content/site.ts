@@ -278,7 +278,7 @@ export const siteContent = {
         "Per ora usiamo canali placeholder. Sostituiscili con form, email o profili social appena saranno pronti.",
       primary: "Scrivici",
       secondary: "Segui Emilia Lab",
-      email: "hello@emilialab.ai"
+      email: "nicolocampagnoli20@icloud.com"
     },
     footer: {
       tagline: "Contenuti, prototipi e sperimentazione AI per il contesto italiano.",
@@ -525,7 +525,7 @@ export const siteContent = {
         "For now we use placeholder channels. Replace them with a form, email, or social profiles as soon as they are ready.",
       primary: "Write to us",
       secondary: "Follow Emilia Lab",
-      email: "hello@emilialab.ai"
+      email: "nicolocampagnoli20@icloud.com"
     },
     footer: {
       tagline: "Content, prototypes, and AI experimentation for the Italian context.",
