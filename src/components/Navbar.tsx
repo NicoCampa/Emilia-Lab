@@ -61,42 +61,37 @@ export function Navbar() {
         </button>
       </nav>
 
-      <div
-        className={cn(
-          "pointer-events-auto mx-5 grid rounded-lg border backdrop-blur-xl transition-all duration-300 md:hidden",
-          isOpen
-            ? "grid-rows-[1fr] border-white/70 bg-white/92 shadow-soft"
-            : "grid-rows-[0fr] border-transparent bg-transparent shadow-none"
-        )}
-      >
-        <div className="overflow-hidden">
-          <div className="space-y-2 px-5 py-5">
-            {navItems.map((item) => (
-              <Link
-                className={cn(
-                  "block rounded-lg px-4 py-3 text-base font-medium text-graphite transition hover:bg-lime/30 hover:text-ink",
-                  pathname === item.href && "bg-lime/50 text-ink"
-                )}
-                href={item.href}
-                key={item.href}
-                onClick={closeMenu}
-              >
-                {content.nav[item.key]}
-              </Link>
-            ))}
-            <div className="flex items-center justify-between pt-3">
-              <LanguageSwitcher language={language} setLanguage={setLanguage} />
-              <Link
-                className="rounded-full bg-lime px-4 py-2 text-sm font-semibold text-ink"
-                href="/join"
-                onClick={closeMenu}
-              >
-                {content.common.joinCta}
-              </Link>
+      {isOpen ? (
+        <div className="pointer-events-auto mx-5 grid rounded-lg border border-white/70 bg-white/92 shadow-soft backdrop-blur-xl transition-all duration-300 md:hidden">
+          <div className="overflow-hidden">
+            <div className="space-y-2 px-5 py-5">
+              {navItems.map((item) => (
+                <Link
+                  className={cn(
+                    "block rounded-lg px-4 py-3 text-base font-medium text-graphite transition hover:bg-lime/30 hover:text-ink",
+                    pathname === item.href && "bg-lime/50 text-ink"
+                  )}
+                  href={item.href}
+                  key={item.href}
+                  onClick={closeMenu}
+                >
+                  {content.nav[item.key]}
+                </Link>
+              ))}
+              <div className="flex items-center justify-between pt-3">
+                <LanguageSwitcher language={language} setLanguage={setLanguage} />
+                <Link
+                  className="rounded-full bg-lime px-4 py-2 text-sm font-semibold text-ink"
+                  href="/join"
+                  onClick={closeMenu}
+                >
+                  {content.common.joinCta}
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      ) : null}
     </header>
   );
 }
