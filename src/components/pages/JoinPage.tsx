@@ -54,7 +54,7 @@ export function JoinPage() {
                   {page.primary}
                 </Button>
                 <Button
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/company/emilia-lab"
                   variant="outlineLight"
                   external
                 >

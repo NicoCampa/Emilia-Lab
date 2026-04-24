@@ -188,7 +188,7 @@ export function HomePage() {
                 {home.finalCta.primary}
               </Button>
               <Button
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/emilia-lab"
                 variant="outlineLight"
                 external
               >
