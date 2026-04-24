@@ -259,9 +259,7 @@ export const siteContent = {
             "Sviluppa la presenza di Emilia Lab, costruisce una community coinvolta, cura collaborazioni e partnership di ecosistema e aiuta a mantenere attiva la rete intorno al progetto.",
           members: [{ name: "Open role", role: "Growth & Partnerships" }]
         }
-      ],
-      note:
-        "I nomi sono placeholder finché il team non sarà definito. La struttura è pensata per crescere in modo modulare."
+      ]
     },
     join: {
       pageTitle: "Join Us",
@@ -506,9 +504,7 @@ export const siteContent = {
             "Grow the visibility of Emilia Lab, foster an engaged community, develop collaborations and ecosystem partnerships, and help keep the project connected to the wider AI landscape.",
           members: [{ name: "Open role", role: "Growth & Partnerships" }]
         }
-      ],
-      note:
-        "Names are placeholders until the team is defined. The structure is designed to grow modularly."
+      ]
     },
     join: {
       pageTitle: "Join Us",

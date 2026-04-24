@@ -57,11 +57,6 @@ export function TeamPage() {
           ))}
         </div>
 
-        <SectionReveal>
-          <p className="mt-10 max-w-3xl rounded-lg border border-ink/10 bg-white p-5 leading-7 text-graphite">
-            {page.note}
-          </p>
-        </SectionReveal>
       </Section>
     </>
   );
