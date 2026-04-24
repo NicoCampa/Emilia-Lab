@@ -41,7 +41,7 @@ export const iconMap = {
 export const siteContent = {
   it: {
     meta: {
-      title: "Emilia Lab | AI concreta per il mercato italiano",
+      title: "Emilia Lab | AI per il mercato italiano",
       description:
         "Emilia Lab è un'iniziativa studentesca sull'intelligenza artificiale, con focus su contenuti, prototipi, benchmark e sperimentazione per il contesto italiano."
     },
@@ -64,11 +64,11 @@ export const siteContent = {
         eyebrow: "Student-led AI initiative",
         title: "Emilia Lab",
         subtitle:
-          "Rendiamo l'AI più concreta, accessibile e utile per il mercato italiano attraverso contenuti, prototipi, benchmark e sperimentazione.",
+          "Esploriamo come l'AI può essere capita e usata nel contesto italiano attraverso contenuti, prototipi, benchmark e sperimentazione.",
         primaryCta: "Unisciti al lab",
         secondaryCta: "Cosa facciamo",
         signal: "Focus mercato italiano",
-        location: "Bologna, città universitaria",
+        location: "Bologna",
         proof: ["AI applicata", "Prototipi rapidi", "Benchmark indipendenti"]
       },
       intro: {
@@ -115,28 +115,28 @@ export const siteContent = {
         items: [
           {
             icon: "lightbulb",
-            title: "AI meno astratta",
+            title: "AI nel contesto italiano",
             description:
-              "Portiamo l'AI fuori dalle buzzword, con esempi, test e applicazioni vicine a studenti, aziende e creator italiani."
+              "Raccogliamo esempi, test e applicazioni che possano essere utili a studenti, team e creator che guardano al contesto italiano."
           },
           {
             icon: "flask",
-            title: "Metodo da laboratorio",
+            title: "Metodo di lavoro",
             description:
-              "Ogni idea viene osservata, provata e documentata: meno hype, più esperimenti chiari."
+              "Ogni idea viene osservata, provata e documentata, così da rendere il percorso più leggibile e discutibile."
           },
           {
             icon: "users",
-            title: "Crescita condivisa",
+            title: "Percorso condiviso",
             description:
-              "Un posto per imparare lavorando su progetti reali, con ruoli chiari e spazio per iniziativa personale."
+              "Un posto per imparare lavorando insieme, con ruoli chiari e spazio per iniziativa personale."
           }
         ]
       },
       teamPreview: {
         title: "Un team leggero, operativo e multidisciplinare",
         body:
-          "Leadership, engineering, contenuto, community e partnership lavorano come un piccolo studio AI: pochi livelli, molta responsabilità e output concreti.",
+          "Leadership, engineering, contenuto, community e partnership lavorano come un piccolo studio AI: pochi livelli, responsabilità distribuita e lavoro visibile.",
         roles: [
           "Leadership",
           "Prototyping",
@@ -148,7 +148,7 @@ export const siteContent = {
       finalCta: {
         title: "Vuoi costruire Emilia Lab con noi?",
         body:
-          "Stiamo cercando persone curiose, affidabili e pronte a trasformare idee AI in contenuti, benchmark e prototipi reali.",
+          "Stiamo cercando persone curiose, affidabili e interessate a contribuire con contenuti, benchmark, prototipi e community.",
         primary: "Vedi come partecipare",
         secondary: "Segui gli aggiornamenti"
       }
@@ -156,27 +156,27 @@ export const siteContent = {
     about: {
       pageTitle: "About Emilia Lab",
       pageIntro:
-        "Un'iniziativa studentesca nata per rendere l'intelligenza artificiale più concreta, accessibile e rilevante nel contesto italiano.",
+        "Un'iniziativa studentesca che studia l'intelligenza artificiale nel contesto italiano attraverso contenuti, prototipi e sperimentazione.",
       body:
-        "Emilia Lab esplora trend, strumenti e applicazioni reali dell'AI attraverso contenuti, prototipi, benchmarking e sperimentazione. L'obiettivo è creare un ambiente dove studenti e giovani builder possano imparare, costruire e condividere idee con standard seri ma spirito aperto.",
+        "Emilia Lab esplora trend, strumenti e applicazioni dell'AI attraverso contenuti, prototipi, benchmarking e sperimentazione. L'obiettivo è creare un ambiente dove studenti e giovani builder possano imparare, costruire e condividere idee in modo aperto e ordinato.",
       manifesto: [
-        "Partiamo da problemi reali, non da parole di moda.",
-        "Costruiamo prototipi abbastanza piccoli da essere veloci e abbastanza solidi da insegnare qualcosa.",
-        "Rendiamo i risultati leggibili per chi vuole capire l'AI senza rumore."
+        "Partiamo da domande e casi d'uso chiari.",
+        "Costruiamo prototipi abbastanza piccoli da essere rapidi da testare e utili da discutere.",
+        "Cerchiamo di rendere i risultati leggibili per chi vuole capire meglio l'AI."
       ],
       principlesTitle: "Principi",
       principles: [
         {
           icon: "sparkles",
-          title: "Concretezza",
+          title: "Chiarezza",
           description:
-            "Ogni contenuto o prototipo deve aiutare qualcuno a capire, decidere o costruire meglio."
+            "Ogni contenuto o prototipo dovrebbe aiutare qualcuno a capire meglio un tema, uno strumento o un caso d'uso."
         },
         {
           icon: "chart",
-          title: "Credibilità",
+          title: "Metodo",
           description:
-            "Separiamo opinioni, test e risultati. Quando misuriamo qualcosa, rendiamo chiaro il metodo."
+            "Separiamo opinioni, test e risultati. Quando misuriamo qualcosa, proviamo a rendere chiaro il metodo."
         },
         {
           icon: "users",
@@ -189,7 +189,7 @@ export const siteContent = {
     whatWeDo: {
       pageTitle: "Cosa facciamo",
       pageIntro:
-        "Emilia Lab lavora su contenuti, prototipi e ricerca applicata per rendere l'AI utile nel presente.",
+        "Emilia Lab lavora su contenuti, prototipi e ricerca applicata per esplorare usi pratici dell'AI.",
       sections: [
         {
           icon: "rocket",
@@ -244,7 +244,7 @@ export const siteContent = {
         {
           title: "Engineering - Research & Benchmarking",
           description:
-            "Valuta modelli, strumenti e workflow attraverso benchmark, test e confronti strutturati. Produce insight tecnici credibili, report e risultati utili a guidare esperimenti e contenuti.",
+            "Valuta modelli, strumenti e workflow attraverso benchmark, test e confronti strutturati. Produce note tecniche, report e risultati utili a guidare esperimenti e contenuti.",
           members: [{ name: "Open role", role: "AI Research Analyst" }]
         },
         {
@@ -256,7 +256,7 @@ export const siteContent = {
         {
           title: "Growth, Community & Ecosystem Partnerships",
           description:
-            "Sviluppa la crescita e la visibilità di Emilia Lab, costruisce una community coinvolta, sviluppa collaborazioni e partnership di ecosistema e aiuta a posizionare l'iniziativa come un nodo riconosciuto nel panorama AI.",
+            "Sviluppa la presenza di Emilia Lab, costruisce una community coinvolta, cura collaborazioni e partnership di ecosistema e aiuta a mantenere attiva la rete intorno al progetto.",
           members: [{ name: "Open role", role: "Growth & Partnerships" }]
         }
       ],
@@ -266,7 +266,7 @@ export const siteContent = {
     join: {
       pageTitle: "Join Us",
       pageIntro:
-        "Se vuoi imparare costruendo e contribuire a un progetto AI credibile, Emilia Lab è aperto a nuovi profili.",
+        "Se vuoi imparare costruendo e contribuire al progetto, Emilia Lab è aperto a nuovi profili.",
       lookingForTitle: "Profili che cerchiamo",
       lookingFor: [
         "Studenti e giovani builder con curiosità forte per l'AI.",
@@ -281,14 +281,14 @@ export const siteContent = {
       email: "hello@emilialab.ai"
     },
     footer: {
-      tagline: "AI concreta, accessibile e rilevante per il contesto italiano.",
+      tagline: "Contenuti, prototipi e sperimentazione AI per il contesto italiano.",
       location: "Student-led. Built in Italy.",
       linksTitle: "Navigazione"
     }
   },
   en: {
     meta: {
-      title: "Emilia Lab | Concrete AI for the Italian market",
+      title: "Emilia Lab | AI for the Italian market",
       description:
         "Emilia Lab is a student-led artificial intelligence initiative focused on content, prototypes, benchmarks, and experimentation for the Italian context."
     },
@@ -311,11 +311,11 @@ export const siteContent = {
         eyebrow: "Student-led AI initiative",
         title: "Emilia Lab",
         subtitle:
-          "We make AI more concrete, accessible, and relevant for the Italian market through content, prototypes, benchmarking, and experimentation.",
+          "We explore how AI can be understood and used in the Italian context through content, prototypes, benchmarking, and experimentation.",
         primaryCta: "Join the lab",
         secondaryCta: "What we do",
         signal: "Italian market focus",
-        location: "Bologna, university city",
+        location: "Bologna",
         proof: ["Applied AI", "Rapid prototypes", "Independent benchmarks"]
       },
       intro: {
@@ -362,28 +362,28 @@ export const siteContent = {
         items: [
           {
             icon: "lightbulb",
-            title: "Less abstract AI",
+            title: "AI in the Italian context",
             description:
-              "We move AI beyond buzzwords with examples, tests, and applications close to Italian students, companies, and creators."
+              "We collect examples, tests, and applications that can be useful for students, teams, and creators working in the Italian context."
           },
           {
             icon: "flask",
-            title: "A lab mindset",
+            title: "A working method",
             description:
-              "Every idea is observed, tested, and documented: less hype, clearer experiments."
+              "Every idea is observed, tested, and documented so the process stays easier to read, discuss, and improve."
           },
           {
             icon: "users",
-            title: "Shared growth",
+            title: "A shared path",
             description:
-              "A place to learn by working on real projects, with clear roles and room for personal initiative."
+              "A place to learn by working together, with clear roles and room for personal initiative."
           }
         ]
       },
       teamPreview: {
         title: "A lean, hands-on, multidisciplinary team",
         body:
-          "Leadership, engineering, content, community, and partnerships work like a small AI studio: few layers, real ownership, concrete outputs.",
+          "Leadership, engineering, content, community, and partnerships work like a small AI studio: few layers, distributed responsibility, and visible work.",
         roles: [
           "Leadership",
           "Prototyping",
@@ -395,7 +395,7 @@ export const siteContent = {
       finalCta: {
         title: "Want to build Emilia Lab with us?",
         body:
-          "We are looking for curious, reliable people ready to turn AI ideas into real content, benchmarks, and prototypes.",
+          "We are looking for curious, reliable people interested in contributing to content, benchmarks, prototypes, and community.",
         primary: "See how to join",
         secondary: "Follow updates"
       }
@@ -403,27 +403,27 @@ export const siteContent = {
     about: {
       pageTitle: "About Emilia Lab",
       pageIntro:
-        "A student-led initiative created to make artificial intelligence more concrete, accessible, and relevant in the Italian context.",
+        "A student-led initiative focused on studying artificial intelligence in the Italian context through content, prototypes, and experimentation.",
       body:
-        "Emilia Lab explores trends, tools, and real-world AI applications through content, prototypes, benchmarking, and experimentation. The goal is to create an environment where students and young builders can learn, build, and share ideas with serious standards and an open spirit.",
+        "Emilia Lab explores trends, tools, and AI applications through content, prototypes, benchmarking, and experimentation. The goal is to create an environment where students and young builders can learn, build, and share ideas in an open and structured way.",
       manifesto: [
-        "We start from real problems, not buzzwords.",
-        "We build prototypes small enough to move fast and solid enough to teach us something.",
-        "We make results readable for people who want to understand AI without noise."
+        "We try to start from clear questions and use cases.",
+        "We build prototypes that are small enough to test quickly and useful enough to discuss.",
+        "We try to present results in a way that helps people understand AI more clearly."
       ],
       principlesTitle: "Principles",
       principles: [
         {
           icon: "sparkles",
-          title: "Concrete value",
+          title: "Clarity",
           description:
-            "Every piece of content or prototype should help someone understand, decide, or build better."
+            "Each piece of content or each prototype should help someone understand a topic, a tool, or a use case more clearly."
         },
         {
           icon: "chart",
-          title: "Credibility",
+          title: "Method",
           description:
-            "We separate opinions, tests, and results. When we measure something, we make the method clear."
+            "We separate opinions, tests, and results. When we measure something, we try to make the method explicit."
         },
         {
           icon: "users",
@@ -436,7 +436,7 @@ export const siteContent = {
     whatWeDo: {
       pageTitle: "What we do",
       pageIntro:
-        "Emilia Lab works on content, prototypes, and applied research to make AI useful now.",
+        "Emilia Lab works on content, prototypes, and applied research to explore practical uses of AI.",
       sections: [
         {
           icon: "rocket",
@@ -491,7 +491,7 @@ export const siteContent = {
         {
           title: "Engineering - Research & Benchmarking",
           description:
-            "Evaluate models, tools, and workflows through benchmarks, testing, and structured comparisons. Produce credible technical insights, reports, and findings that can guide experiments and content.",
+            "Evaluate models, tools, and workflows through benchmarks, testing, and structured comparisons. Produce technical notes, reports, and findings that can guide experiments and content.",
           members: [{ name: "Open role", role: "AI Research Analyst" }]
         },
         {
@@ -503,7 +503,7 @@ export const siteContent = {
         {
           title: "Growth, Community & Ecosystem Partnerships",
           description:
-            "Drive the growth and visibility of Emilia Lab, foster an engaged community, develop collaborations and ecosystem partnerships, and help position the initiative as a recognized node in the AI landscape.",
+            "Grow the visibility of Emilia Lab, foster an engaged community, develop collaborations and ecosystem partnerships, and help keep the project connected to the wider AI landscape.",
           members: [{ name: "Open role", role: "Growth & Partnerships" }]
         }
       ],
@@ -513,7 +513,7 @@ export const siteContent = {
     join: {
       pageTitle: "Join Us",
       pageIntro:
-        "If you want to learn by building and contribute to a credible AI project, Emilia Lab is open to new profiles.",
+        "If you want to learn by building and contribute to the project, Emilia Lab is open to new profiles.",
       lookingForTitle: "Who we are looking for",
       lookingFor: [
         "Students and young builders with strong curiosity for AI.",
@@ -528,7 +528,7 @@ export const siteContent = {
       email: "hello@emilialab.ai"
     },
     footer: {
-      tagline: "Concrete, accessible, relevant AI for the Italian context.",
+      tagline: "Content, prototypes, and AI experimentation for the Italian context.",
       location: "Student-led. Built in Italy.",
       linksTitle: "Navigation"
     }

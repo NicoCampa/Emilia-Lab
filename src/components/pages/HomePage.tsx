@@ -143,7 +143,7 @@ export function HomePage() {
       <Section className="bg-ink text-white">
         <SectionReveal>
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            <div className="sticky top-28">
+            <div className="lg:sticky lg:top-28">
               <p className="text-sm font-bold uppercase text-lime">Why</p>
               <h2 className="font-space mt-4 max-w-lg text-4xl font-black leading-[1.05] sm:text-5xl">
                 <HighlightEmilia text={home.why.title} tone="mark" />
