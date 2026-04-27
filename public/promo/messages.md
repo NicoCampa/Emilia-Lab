@@ -1,13 +1,14 @@
-# Emilia Lab Promo Messages
+# Emilia Lab Promo Message
 
 Form link: https://forms.gle/QRecJSFUnqPtNsZt9
 LinkedIn: https://www.linkedin.com/company/emilia-lab
+Image: public/promo/emilia-lab-pillars.png
 
 ## General University Groups
 
 Hi everyone, we are opening applications for Emilia Lab, a student-led AI initiative for University of Bologna students.
 
-We work on AI content, prototypes, benchmarking, and community activities. You do not need prior AI experience: curiosity, reliability, and willingness to contribute are enough.
+We work across four areas: prototyping, research and benchmarking, social and content, and growth/community/events. You do not need prior AI experience: curiosity, reliability, and willingness to contribute are enough.
 
 Apply here: https://forms.gle/QRecJSFUnqPtNsZt9
 
