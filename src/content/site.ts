@@ -43,7 +43,7 @@ export const iconMap = {
 export const siteContent = {
   it: {
     meta: {
-      title: "Emilia Lab | AI per il mercato italiano",
+      title: "Emilia Lab | Student-led AI initiative",
       description:
         "Emilia Lab è un'iniziativa studentesca sull'intelligenza artificiale, con focus su contenuti, prototipi, benchmark e sperimentazione per il contesto italiano."
     },
@@ -69,7 +69,7 @@ export const siteContent = {
           "Esploriamo come l'AI può essere capita e usata nel contesto italiano attraverso contenuti, prototipi, benchmark e sperimentazione.",
         primaryCta: "Unisciti al lab",
         secondaryCta: "Cosa facciamo",
-        signal: "Focus mercato italiano",
+        signal: "AI nel contesto italiano",
         location: "Bologna",
         proof: ["AI applicata", "Prototipi rapidi", "Benchmark indipendenti"]
       },
@@ -288,7 +288,7 @@ export const siteContent = {
   },
   en: {
     meta: {
-      title: "Emilia Lab | AI for the Italian market",
+      title: "Emilia Lab | Student-led AI initiative",
       description:
         "Emilia Lab is a student-led artificial intelligence initiative focused on content, prototypes, benchmarks, and experimentation for the Italian context."
     },
@@ -314,7 +314,7 @@ export const siteContent = {
           "We explore how AI can be understood and used in the Italian context through content, prototypes, benchmarking, and experimentation.",
         primaryCta: "Join the lab",
         secondaryCta: "What we do",
-        signal: "Italian market focus",
+        signal: "AI in the Italian context",
         location: "Bologna",
         proof: ["Applied AI", "Rapid prototypes", "Independent benchmarks"]
       },
