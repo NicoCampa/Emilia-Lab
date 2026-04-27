@@ -1,12 +1,13 @@
 "use client";
 
-import { Mail, Plus, Radio } from "lucide-react";
+import { Plus, Radio, Send } from "lucide-react";
 import { HighlightEmilia } from "@/components/BrandText";
 import { Button } from "@/components/Button";
 import { PageHeader } from "@/components/PageHeader";
 import { Section } from "@/components/Section";
 import { SectionReveal } from "@/components/SectionReveal";
 import { useLanguage } from "@/components/LanguageProvider";
+import { applicationFormUrl } from "@/content/site";
 
 export function JoinPage() {
   const { content } = useLanguage();
@@ -47,10 +48,11 @@ export function JoinPage() {
               <p className="mt-5 leading-8 text-white/72">{page.contactBody}</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button
-                  href={`mailto:${page.email}`}
+                  href={applicationFormUrl}
                   variant="light"
+                  external
                 >
-                  <Mail className="h-4 w-4" />
+                  <Send className="h-4 w-4" />
                   {page.primary}
                 </Button>
                 <Button

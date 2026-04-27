@@ -25,6 +25,8 @@ export const navItems = [
   { href: "/join", key: "join" }
 ] as const;
 
+export const applicationFormUrl = "https://forms.gle/QRecJSFUnqPtNsZt9";
+
 export const iconMap = {
   bot: Bot,
   chart: ChartNoAxesCombined,
@@ -273,8 +275,8 @@ export const siteContent = {
       ],
       contactTitle: "Partecipa o segui il progetto",
       contactBody:
-        "Per ora usiamo canali placeholder. Sostituiscili con form, email o profili social appena saranno pronti.",
-      primary: "Scrivici",
+        "Compila il form per raccontarci chi sei, quale area ti interessa e come vorresti contribuire.",
+      primary: "Candidati",
       secondary: "Segui Emilia Lab",
       email: "nicolocampagnoli20@icloud.com"
     },
@@ -518,8 +520,8 @@ export const siteContent = {
       ],
       contactTitle: "Join or follow the project",
       contactBody:
-        "For now we use placeholder channels. Replace them with a form, email, or social profiles as soon as they are ready.",
-      primary: "Write to us",
+        "Fill out the form to tell us who you are, which area interests you, and how you would like to contribute.",
+      primary: "Apply",
       secondary: "Follow Emilia Lab",
       email: "nicolocampagnoli20@icloud.com"
     },

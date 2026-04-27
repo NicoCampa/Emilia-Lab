@@ -4,7 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { languages, navItems, type Language } from "@/content/site";
+import {
+  applicationFormUrl,
+  languages,
+  navItems,
+  type Language
+} from "@/content/site";
 import { useLanguage } from "@/components/LanguageProvider";
 import { cn } from "@/lib/utils";
 
@@ -42,12 +47,14 @@ export function Navbar() {
 
         <div className="hidden items-center justify-self-end gap-3 md:flex">
           <LanguageSwitcher language={language} setLanguage={setLanguage} />
-          <Link
+          <a
             className="pointer-events-auto rounded-full bg-lime px-5 py-2 text-sm font-bold text-ink shadow-sm transition hover:-translate-y-0.5 hover:bg-lime/80"
-            href="/join"
+            href={applicationFormUrl}
+            rel="noreferrer"
+            target="_blank"
           >
             {content.common.joinCta}
-          </Link>
+          </a>
         </div>
 
         <button
@@ -80,13 +87,15 @@ export function Navbar() {
               ))}
               <div className="flex items-center justify-between pt-3">
                 <LanguageSwitcher language={language} setLanguage={setLanguage} />
-                <Link
+                <a
                   className="rounded-full bg-lime px-4 py-2 text-sm font-semibold text-ink"
-                  href="/join"
+                  href={applicationFormUrl}
                   onClick={closeMenu}
+                  rel="noreferrer"
+                  target="_blank"
                 >
                   {content.common.joinCta}
-                </Link>
+                </a>
               </div>
             </div>
           </div>

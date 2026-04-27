@@ -8,7 +8,7 @@ import { IconBadge } from "@/components/IconBadge";
 import { Container, Section } from "@/components/Section";
 import { SectionReveal } from "@/components/SectionReveal";
 import { useLanguage } from "@/components/LanguageProvider";
-import { iconMap, type IconName } from "@/content/site";
+import { applicationFormUrl, iconMap, type IconName } from "@/content/site";
 
 export function HomePage() {
   const { content } = useLanguage();
@@ -42,7 +42,9 @@ export function HomePage() {
               {home.hero.subtitle}
             </p>
             <div className="mt-8 flex animate-fade-up flex-col gap-3 delay-300 sm:flex-row">
-              <Button href="/join">{home.hero.primaryCta}</Button>
+              <Button href={applicationFormUrl} external>
+                {home.hero.primaryCta}
+              </Button>
               <Button href="/what-we-do" variant="secondary">
                 {home.hero.secondaryCta}
               </Button>
@@ -184,7 +186,7 @@ export function HomePage() {
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-              <Button href="/join" variant="light">
+              <Button href={applicationFormUrl} variant="light" external>
                 {home.finalCta.primary}
               </Button>
               <Button
